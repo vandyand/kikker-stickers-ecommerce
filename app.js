@@ -368,8 +368,21 @@ function setupFormValidation() {
 }
 
 document.addEventListener('snipcart.ready', function() {
-  Snipcart.api.session.setLanguage('en');
-  Snipcart.api.modal.settings.set('shipping', {
-    enabled: true
-  });
+  console.log('Snipcart is ready');
+  
+  // Ensure Snipcart is fully loaded before accessing its API
+  if (window.Snipcart) {
+    Snipcart.api.session.setLanguage('en');
+    
+    // Check if the settings property exists before trying to access it
+    if (Snipcart.api.modal && Snipcart.api.modal.settings) {
+      Snipcart.api.modal.settings.set('shipping', {
+        enabled: true
+      });
+    } else {
+      console.warn('Snipcart modal settings not available');
+    }
+  } else {
+    console.error('Snipcart not found');
+  }
 });
