@@ -1,1583 +1,3650 @@
 [
-  { "shape": "Circle", "size": "2\" x 2\"", "quantity": 50, "price": 26.41 },
-  { "shape": "Circle", "size": "2\" x 2\"", "quantity": 100, "price": 34.86 },
-  { "shape": "Circle", "size": "2\" x 2\"", "quantity": 250, "price": 66.03 },
-  { "shape": "Circle", "size": "2\" x 2\"", "quantity": 300, "price": 79.24 },
-  { "shape": "Circle", "size": "2\" x 2\"", "quantity": 400, "price": 105.65 },
-  { "shape": "Circle", "size": "2\" x 2\"", "quantity": 500, "price": 87.26 },
-  { "shape": "Circle", "size": "2\" x 2\"", "quantity": 600, "price": 104.71 },
-  { "shape": "Circle", "size": "2\" x 2\"", "quantity": 750, "price": 119.82 },
-  { "shape": "Circle", "size": "2\" x 2\"", "quantity": 1000, "price": 137.36 },
-  { "shape": "Circle", "size": "2\" x 2\"", "quantity": 1500, "price": 194.28 },
-  { "shape": "Circle", "size": "2\" x 2\"", "quantity": 2000, "price": 242.96 },
-  { "shape": "Circle", "size": "2\" x 2\"", "quantity": 2500, "price": 285.3 },
-  { "shape": "Circle", "size": "2\" x 2\"", "quantity": 3000, "price": 342.36 },
-  { "shape": "Circle", "size": "2\" x 2\"", "quantity": 5000, "price": 464.8 },
-  { "shape": "Circle", "size": "2\" x 2\"", "quantity": 6000, "price": 557.76 },
-  { "shape": "Circle", "size": "2\" x 2\"", "quantity": 10000, "price": 845.6 },
   {
     "shape": "Circle",
-    "size": "2\" x 2\"",
-    "quantity": 15000,
-    "price": 1215.6
-  },
-  {
-    "shape": "Circle",
-    "size": "2\" x 2\"",
-    "quantity": 20000,
-    "price": 1614.4
-  },
-  { "shape": "Circle", "size": "2\" x 2\"", "quantity": 25000, "price": 2008 },
-  {
-    "shape": "Circle",
-    "size": "2.5\" x 2.5\"",
     "quantity": 50,
-    "price": 41.27
+    "price": 26.41,
+    "width": 2.0,
+    "height": 2.0,
+    "id": "66412442fe16"
   },
   {
     "shape": "Circle",
-    "size": "2.5\" x 2.5\"",
     "quantity": 100,
-    "price": 54.48
+    "price": 34.86,
+    "width": 2.0,
+    "height": 2.0,
+    "id": "612a6dfe8beb"
   },
   {
     "shape": "Circle",
-    "size": "2.5\" x 2.5\"",
     "quantity": 250,
-    "price": 103.17
+    "price": 66.03,
+    "width": 2.0,
+    "height": 2.0,
+    "id": "a13218165fe5"
   },
   {
     "shape": "Circle",
-    "size": "2.5\" x 2.5\"",
     "quantity": 300,
-    "price": 123.81
+    "price": 79.24,
+    "width": 2.0,
+    "height": 2.0,
+    "id": "e36ff57b3eca"
   },
   {
     "shape": "Circle",
-    "size": "2.5\" x 2.5\"",
     "quantity": 400,
-    "price": 165.08
+    "price": 105.65,
+    "width": 2.0,
+    "height": 2.0,
+    "id": "e86586104352"
   },
   {
     "shape": "Circle",
-    "size": "2.5\" x 2.5\"",
     "quantity": 500,
-    "price": 136.34
+    "price": 87.26,
+    "width": 2.0,
+    "height": 2.0,
+    "id": "827a839cd3c1"
   },
   {
     "shape": "Circle",
-    "size": "2.5\" x 2.5\"",
     "quantity": 600,
-    "price": 163.61
+    "price": 104.71,
+    "width": 2.0,
+    "height": 2.0,
+    "id": "7798617ac56d"
   },
   {
     "shape": "Circle",
-    "size": "2.5\" x 2.5\"",
     "quantity": 750,
-    "price": 187.22
+    "price": 119.82,
+    "width": 2.0,
+    "height": 2.0,
+    "id": "a3612f7e88c4"
   },
   {
     "shape": "Circle",
-    "size": "2.5\" x 2.5\"",
     "quantity": 1000,
-    "price": 214.63
+    "price": 137.36,
+    "width": 2.0,
+    "height": 2.0,
+    "id": "985d7d6258de"
   },
   {
     "shape": "Circle",
-    "size": "2.5\" x 2.5\"",
     "quantity": 1500,
-    "price": 303.56
+    "price": 194.28,
+    "width": 2.0,
+    "height": 2.0,
+    "id": "fffa275b1c6c"
   },
   {
     "shape": "Circle",
-    "size": "2.5\" x 2.5\"",
     "quantity": 2000,
-    "price": 379.63
+    "price": 242.96,
+    "width": 2.0,
+    "height": 2.0,
+    "id": "0d9939479925"
   },
   {
     "shape": "Circle",
-    "size": "2.5\" x 2.5\"",
     "quantity": 2500,
-    "price": 445.78
+    "price": 285.3,
+    "width": 2.0,
+    "height": 2.0,
+    "id": "4b77ffc497ca"
   },
   {
     "shape": "Circle",
-    "size": "2.5\" x 2.5\"",
     "quantity": 3000,
-    "price": 534.94
+    "price": 342.36,
+    "width": 2.0,
+    "height": 2.0,
+    "id": "ca7177284e61"
   },
   {
     "shape": "Circle",
-    "size": "2.5\" x 2.5\"",
     "quantity": 5000,
-    "price": 726.25
+    "price": 464.8,
+    "width": 2.0,
+    "height": 2.0,
+    "id": "2c7888e28fa1"
   },
   {
     "shape": "Circle",
-    "size": "2.5\" x 2.5\"",
     "quantity": 6000,
-    "price": 871.5
+    "price": 557.76,
+    "width": 2.0,
+    "height": 2.0,
+    "id": "61fc9b4c17a3"
   },
   {
     "shape": "Circle",
-    "size": "2.5\" x 2.5\"",
     "quantity": 10000,
-    "price": 1321.25
+    "price": 845.6,
+    "width": 2.0,
+    "height": 2.0,
+    "id": "a3e87f458c29"
   },
   {
     "shape": "Circle",
-    "size": "2.5\" x 2.5\"",
     "quantity": 15000,
-    "price": 1899.38
+    "price": 1215.6,
+    "width": 2.0,
+    "height": 2.0,
+    "id": "53e865f2628d"
   },
   {
     "shape": "Circle",
-    "size": "2.5\" x 2.5\"",
     "quantity": 20000,
-    "price": 2522.5
+    "price": 1614.4,
+    "width": 2.0,
+    "height": 2.0,
+    "id": "1c5f00beceff"
   },
   {
     "shape": "Circle",
-    "size": "2.5\" x 2.5\"",
     "quantity": 25000,
-    "price": 3137.5
-  },
-  { "shape": "Circle", "size": "3\" x 3\"", "quantity": 50, "price": 59.43 },
-  { "shape": "Circle", "size": "3\" x 3\"", "quantity": 100, "price": 78.44 },
-  { "shape": "Circle", "size": "3\" x 3\"", "quantity": 250, "price": 148.57 },
-  { "shape": "Circle", "size": "3\" x 3\"", "quantity": 300, "price": 178.28 },
-  { "shape": "Circle", "size": "3\" x 3\"", "quantity": 400, "price": 237.71 },
-  { "shape": "Circle", "size": "3\" x 3\"", "quantity": 500, "price": 196.34 },
-  { "shape": "Circle", "size": "3\" x 3\"", "quantity": 600, "price": 235.6 },
-  { "shape": "Circle", "size": "3\" x 3\"", "quantity": 750, "price": 269.6 },
-  { "shape": "Circle", "size": "3\" x 3\"", "quantity": 1000, "price": 309.06 },
-  { "shape": "Circle", "size": "3\" x 3\"", "quantity": 1500, "price": 437.13 },
-  { "shape": "Circle", "size": "3\" x 3\"", "quantity": 2000, "price": 546.66 },
-  { "shape": "Circle", "size": "3\" x 3\"", "quantity": 2500, "price": 641.93 },
-  { "shape": "Circle", "size": "3\" x 3\"", "quantity": 3000, "price": 770.31 },
-  { "shape": "Circle", "size": "3\" x 3\"", "quantity": 5000, "price": 1045.8 },
-  {
-    "shape": "Circle",
-    "size": "3\" x 3\"",
-    "quantity": 6000,
-    "price": 1254.96
+    "price": 2008,
+    "width": 2.0,
+    "height": 2.0,
+    "id": "5799fe36d49b"
   },
   {
     "shape": "Circle",
-    "size": "3\" x 3\"",
-    "quantity": 10000,
-    "price": 1902.6
-  },
-  {
-    "shape": "Circle",
-    "size": "3\" x 3\"",
-    "quantity": 15000,
-    "price": 2735.1
-  },
-  {
-    "shape": "Circle",
-    "size": "3\" x 3\"",
-    "quantity": 20000,
-    "price": 3632.4
-  },
-  { "shape": "Circle", "size": "3\" x 3\"", "quantity": 25000, "price": 4518 },
-  {
-    "shape": "Circle",
-    "size": "3.5\" x 3.5\"",
     "quantity": 50,
-    "price": 80.89
+    "price": 41.27,
+    "width": 2.5,
+    "height": 2.5,
+    "id": "eae7ab5fa41c"
   },
   {
     "shape": "Circle",
-    "size": "3.5\" x 3.5\"",
     "quantity": 100,
-    "price": 106.77
+    "price": 54.48,
+    "width": 2.5,
+    "height": 2.5,
+    "id": "187467862ad7"
   },
   {
     "shape": "Circle",
-    "size": "3.5\" x 3.5\"",
     "quantity": 250,
-    "price": 202.22
+    "price": 103.17,
+    "width": 2.5,
+    "height": 2.5,
+    "id": "ed3c11b38643"
   },
   {
     "shape": "Circle",
-    "size": "3.5\" x 3.5\"",
     "quantity": 300,
-    "price": 242.66
+    "price": 123.81,
+    "width": 2.5,
+    "height": 2.5,
+    "id": "03c175f00a1b"
   },
   {
     "shape": "Circle",
-    "size": "3.5\" x 3.5\"",
     "quantity": 400,
-    "price": 323.55
+    "price": 165.08,
+    "width": 2.5,
+    "height": 2.5,
+    "id": "340dff10c1da"
   },
   {
     "shape": "Circle",
-    "size": "3.5\" x 3.5\"",
     "quantity": 500,
-    "price": 267.23
+    "price": 136.34,
+    "width": 2.5,
+    "height": 2.5,
+    "id": "6f9bcfd5ec8d"
   },
   {
     "shape": "Circle",
-    "size": "3.5\" x 3.5\"",
     "quantity": 600,
-    "price": 320.68
+    "price": 163.61,
+    "width": 2.5,
+    "height": 2.5,
+    "id": "f7852b8b76a4"
   },
   {
     "shape": "Circle",
-    "size": "3.5\" x 3.5\"",
     "quantity": 750,
-    "price": 366.95
+    "price": 187.22,
+    "width": 2.5,
+    "height": 2.5,
+    "id": "404dde8ba9ce"
   },
   {
     "shape": "Circle",
-    "size": "3.5\" x 3.5\"",
     "quantity": 1000,
-    "price": 420.67
+    "price": 214.63,
+    "width": 2.5,
+    "height": 2.5,
+    "id": "345d4367bde8"
   },
   {
     "shape": "Circle",
-    "size": "3.5\" x 3.5\"",
     "quantity": 1500,
-    "price": 594.98
+    "price": 303.56,
+    "width": 2.5,
+    "height": 2.5,
+    "id": "a62bf5868686"
   },
   {
     "shape": "Circle",
-    "size": "3.5\" x 3.5\"",
     "quantity": 2000,
-    "price": 744.07
+    "price": 379.63,
+    "width": 2.5,
+    "height": 2.5,
+    "id": "b0b65a3124fb"
   },
   {
     "shape": "Circle",
-    "size": "3.5\" x 3.5\"",
     "quantity": 2500,
-    "price": 873.73
+    "price": 445.78,
+    "width": 2.5,
+    "height": 2.5,
+    "id": "a6f02d0bb4ce"
   },
   {
     "shape": "Circle",
-    "size": "3.5\" x 3.5\"",
     "quantity": 3000,
-    "price": 1048.48
+    "price": 534.94,
+    "width": 2.5,
+    "height": 2.5,
+    "id": "93cb3b97bd0f"
   },
   {
     "shape": "Circle",
-    "size": "3.5\" x 3.5\"",
     "quantity": 5000,
-    "price": 1423.45
+    "price": 726.25,
+    "width": 2.5,
+    "height": 2.5,
+    "id": "ad7c857bb225"
   },
   {
     "shape": "Circle",
-    "size": "3.5\" x 3.5\"",
     "quantity": 6000,
-    "price": 1708.14
+    "price": 871.5,
+    "width": 2.5,
+    "height": 2.5,
+    "id": "dcbe6d2bbdc6"
   },
   {
     "shape": "Circle",
-    "size": "3.5\" x 3.5\"",
     "quantity": 10000,
-    "price": 2589.65
+    "price": 1321.25,
+    "width": 2.5,
+    "height": 2.5,
+    "id": "7d8ee5a0c006"
   },
   {
     "shape": "Circle",
-    "size": "3.5\" x 3.5\"",
     "quantity": 15000,
-    "price": 3722.78
+    "price": 1899.38,
+    "width": 2.5,
+    "height": 2.5,
+    "id": "c9aec2b49083"
   },
   {
     "shape": "Circle",
-    "size": "3.5\" x 3.5\"",
     "quantity": 20000,
-    "price": 4944.1
+    "price": 2522.5,
+    "width": 2.5,
+    "height": 2.5,
+    "id": "918e48138b83"
   },
   {
     "shape": "Circle",
-    "size": "3.5\" x 3.5\"",
     "quantity": 25000,
-    "price": 6149.5
-  },
-  { "shape": "Square", "size": "2\" x 2\"", "quantity": 50, "price": 26.41 },
-  { "shape": "Square", "size": "2\" x 2\"", "quantity": 100, "price": 34.86 },
-  { "shape": "Square", "size": "2\" x 2\"", "quantity": 250, "price": 66.03 },
-  { "shape": "Square", "size": "2\" x 2\"", "quantity": 300, "price": 79.24 },
-  { "shape": "Square", "size": "2\" x 2\"", "quantity": 400, "price": 105.65 },
-  { "shape": "Square", "size": "2\" x 2\"", "quantity": 500, "price": 87.26 },
-  { "shape": "Square", "size": "2\" x 2\"", "quantity": 600, "price": 104.71 },
-  { "shape": "Square", "size": "2\" x 2\"", "quantity": 750, "price": 119.82 },
-  { "shape": "Square", "size": "2\" x 2\"", "quantity": 1000, "price": 137.36 },
-  { "shape": "Square", "size": "2\" x 2\"", "quantity": 1500, "price": 194.28 },
-  { "shape": "Square", "size": "2\" x 2\"", "quantity": 2000, "price": 242.96 },
-  { "shape": "Square", "size": "2\" x 2\"", "quantity": 2500, "price": 285.3 },
-  { "shape": "Square", "size": "2\" x 2\"", "quantity": 3000, "price": 342.36 },
-  { "shape": "Square", "size": "2\" x 2\"", "quantity": 5000, "price": 464.8 },
-  { "shape": "Square", "size": "2\" x 2\"", "quantity": 6000, "price": 557.76 },
-  { "shape": "Square", "size": "2\" x 2\"", "quantity": 10000, "price": 845.6 },
-  {
-    "shape": "Square",
-    "size": "2\" x 2\"",
-    "quantity": 15000,
-    "price": 1215.6
+    "price": 3137.5,
+    "width": 2.5,
+    "height": 2.5,
+    "id": "c6fbf0e7ff34"
   },
   {
-    "shape": "Square",
-    "size": "2\" x 2\"",
-    "quantity": 20000,
-    "price": 1215.6
-  },
-  {
-    "shape": "Square",
-    "size": "2\" x 2\"",
-    "quantity": 25000,
-    "price": 1614.4
-  },
-  {
-    "shape": "Square",
-    "size": "2.5\" x 2.5\"",
+    "shape": "Circle",
     "quantity": 50,
-    "price": 41.27
+    "price": 59.43,
+    "width": 3.0,
+    "height": 3.0,
+    "id": "7bbc93fcae25"
   },
   {
-    "shape": "Square",
-    "size": "2.5\" x 2.5\"",
+    "shape": "Circle",
     "quantity": 100,
-    "price": 54.48
+    "price": 78.44,
+    "width": 3.0,
+    "height": 3.0,
+    "id": "009dc9f8a0e9"
   },
   {
-    "shape": "Square",
-    "size": "2.5\" x 2.5\"",
+    "shape": "Circle",
     "quantity": 250,
-    "price": 103.17
+    "price": 148.57,
+    "width": 3.0,
+    "height": 3.0,
+    "id": "a479a14b0019"
   },
   {
-    "shape": "Square",
-    "size": "2.5\" x 2.5\"",
+    "shape": "Circle",
     "quantity": 300,
-    "price": 123.81
+    "price": 178.28,
+    "width": 3.0,
+    "height": 3.0,
+    "id": "9dce840862df"
   },
   {
-    "shape": "Square",
-    "size": "2.5\" x 2.5\"",
+    "shape": "Circle",
     "quantity": 400,
-    "price": 165.08
+    "price": 237.71,
+    "width": 3.0,
+    "height": 3.0,
+    "id": "7f28d7c10728"
   },
   {
-    "shape": "Square",
-    "size": "2.5\" x 2.5\"",
+    "shape": "Circle",
     "quantity": 500,
-    "price": 136.34
+    "price": 196.34,
+    "width": 3.0,
+    "height": 3.0,
+    "id": "7aea6269a2f3"
   },
   {
-    "shape": "Square",
-    "size": "2.5\" x 2.5\"",
+    "shape": "Circle",
     "quantity": 600,
-    "price": 163.61
+    "price": 235.6,
+    "width": 3.0,
+    "height": 3.0,
+    "id": "1423840f681f"
   },
   {
-    "shape": "Square",
-    "size": "2.5\" x 2.5\"",
+    "shape": "Circle",
     "quantity": 750,
-    "price": 187.22
+    "price": 269.6,
+    "width": 3.0,
+    "height": 3.0,
+    "id": "78a798a9a3e3"
   },
   {
-    "shape": "Square",
-    "size": "2.5\" x 2.5\"",
+    "shape": "Circle",
     "quantity": 1000,
-    "price": 214.63
+    "price": 309.06,
+    "width": 3.0,
+    "height": 3.0,
+    "id": "ba3d06c6f214"
   },
   {
-    "shape": "Square",
-    "size": "2.5\" x 2.5\"",
+    "shape": "Circle",
     "quantity": 1500,
-    "price": 303.56
+    "price": 437.13,
+    "width": 3.0,
+    "height": 3.0,
+    "id": "477ec6927188"
   },
   {
-    "shape": "Square",
-    "size": "2.5\" x 2.5\"",
+    "shape": "Circle",
     "quantity": 2000,
-    "price": 379.63
+    "price": 546.66,
+    "width": 3.0,
+    "height": 3.0,
+    "id": "09e18b21c430"
   },
   {
-    "shape": "Square",
-    "size": "2.5\" x 2.5\"",
+    "shape": "Circle",
     "quantity": 2500,
-    "price": 445.78
+    "price": 641.93,
+    "width": 3.0,
+    "height": 3.0,
+    "id": "d7ff2e6b19c3"
   },
   {
-    "shape": "Square",
-    "size": "2.5\" x 2.5\"",
+    "shape": "Circle",
     "quantity": 3000,
-    "price": 534.94
+    "price": 770.31,
+    "width": 3.0,
+    "height": 3.0,
+    "id": "a8a286dfdd3b"
   },
   {
-    "shape": "Square",
-    "size": "2.5\" x 2.5\"",
+    "shape": "Circle",
     "quantity": 5000,
-    "price": 726.25
+    "price": 1045.8,
+    "width": 3.0,
+    "height": 3.0,
+    "id": "b09fc198365e"
   },
   {
-    "shape": "Square",
-    "size": "2.5\" x 2.5\"",
+    "shape": "Circle",
     "quantity": 6000,
-    "price": 871.5
+    "price": 1254.96,
+    "width": 3.0,
+    "height": 3.0,
+    "id": "0202d3c963d6"
   },
   {
-    "shape": "Square",
-    "size": "2.5\" x 2.5\"",
+    "shape": "Circle",
     "quantity": 10000,
-    "price": 1321.25
+    "price": 1902.6,
+    "width": 3.0,
+    "height": 3.0,
+    "id": "b0a856baf41a"
   },
   {
-    "shape": "Square",
-    "size": "2.5\" x 2.5\"",
+    "shape": "Circle",
     "quantity": 15000,
-    "price": 1899.38
+    "price": 2735.1,
+    "width": 3.0,
+    "height": 3.0,
+    "id": "a43b7c1060da"
   },
   {
-    "shape": "Square",
-    "size": "2.5\" x 2.5\"",
+    "shape": "Circle",
     "quantity": 20000,
-    "price": 2522.5
+    "price": 3632.4,
+    "width": 3.0,
+    "height": 3.0,
+    "id": "a666adc0e7b0"
   },
   {
-    "shape": "Square",
-    "size": "2.5\" x 2.5\"",
+    "shape": "Circle",
     "quantity": 25000,
-    "price": 3137.5
-  },
-  { "shape": "Square", "size": "3\" x 3\"", "quantity": 50, "price": 59.43 },
-  { "shape": "Square", "size": "3\" x 3\"", "quantity": 100, "price": 78.44 },
-  { "shape": "Square", "size": "3\" x 3\"", "quantity": 250, "price": 148.57 },
-  { "shape": "Square", "size": "3\" x 3\"", "quantity": 300, "price": 178.28 },
-  { "shape": "Square", "size": "3\" x 3\"", "quantity": 400, "price": 237.71 },
-  { "shape": "Square", "size": "3\" x 3\"", "quantity": 500, "price": 196.34 },
-  { "shape": "Square", "size": "3\" x 3\"", "quantity": 600, "price": 235.6 },
-  { "shape": "Square", "size": "3\" x 3\"", "quantity": 750, "price": 269.6 },
-  { "shape": "Square", "size": "3\" x 3\"", "quantity": 1000, "price": 309.06 },
-  { "shape": "Square", "size": "3\" x 3\"", "quantity": 1500, "price": 437.13 },
-  { "shape": "Square", "size": "3\" x 3\"", "quantity": 2000, "price": 546.66 },
-  { "shape": "Square", "size": "3\" x 3\"", "quantity": 2500, "price": 641.93 },
-  { "shape": "Square", "size": "3\" x 3\"", "quantity": 3000, "price": 770.31 },
-  { "shape": "Square", "size": "3\" x 3\"", "quantity": 5000, "price": 1045.8 },
-  {
-    "shape": "Square",
-    "size": "3\" x 3\"",
-    "quantity": 6000,
-    "price": 1254.96
+    "price": 4518,
+    "width": 3.0,
+    "height": 3.0,
+    "id": "3351d89cbcdb"
   },
   {
-    "shape": "Square",
-    "size": "3\" x 3\"",
-    "quantity": 10000,
-    "price": 1902.6
-  },
-  {
-    "shape": "Square",
-    "size": "3\" x 3\"",
-    "quantity": 15000,
-    "price": 2735.1
-  },
-  {
-    "shape": "Square",
-    "size": "3\" x 3\"",
-    "quantity": 20000,
-    "price": 3632.4
-  },
-  { "shape": "Square", "size": "3\" x 3\"", "quantity": 25000, "price": 4518 },
-  {
-    "shape": "Square",
-    "size": "3.5\" x 3.5\"",
+    "shape": "Circle",
     "quantity": 50,
-    "price": 80.89
+    "price": 80.89,
+    "width": 3.5,
+    "height": 3.5,
+    "id": "caa66b7841e5"
   },
   {
-    "shape": "Square",
-    "size": "3.5\" x 3.5\"",
+    "shape": "Circle",
     "quantity": 100,
-    "price": 106.77
+    "price": 106.77,
+    "width": 3.5,
+    "height": 3.5,
+    "id": "44c58e473fc3"
   },
   {
-    "shape": "Square",
-    "size": "3.5\" x 3.5\"",
+    "shape": "Circle",
     "quantity": 250,
-    "price": 202.22
+    "price": 202.22,
+    "width": 3.5,
+    "height": 3.5,
+    "id": "72fe3b8fdb37"
   },
   {
-    "shape": "Square",
-    "size": "3.5\" x 3.5\"",
+    "shape": "Circle",
     "quantity": 300,
-    "price": 242.66
+    "price": 242.66,
+    "width": 3.5,
+    "height": 3.5,
+    "id": "6399c6b3c9e3"
   },
   {
-    "shape": "Square",
-    "size": "3.5\" x 3.5\"",
+    "shape": "Circle",
     "quantity": 400,
-    "price": 323.55
+    "price": 323.55,
+    "width": 3.5,
+    "height": 3.5,
+    "id": "ee00e0a01baa"
   },
   {
-    "shape": "Square",
-    "size": "3.5\" x 3.5\"",
+    "shape": "Circle",
     "quantity": 500,
-    "price": 267.23
+    "price": 267.23,
+    "width": 3.5,
+    "height": 3.5,
+    "id": "db52dfff8ff5"
   },
   {
-    "shape": "Square",
-    "size": "3.5\" x 3.5\"",
+    "shape": "Circle",
     "quantity": 600,
-    "price": 320.68
+    "price": 320.68,
+    "width": 3.5,
+    "height": 3.5,
+    "id": "46f5673e805f"
   },
   {
-    "shape": "Square",
-    "size": "3.5\" x 3.5\"",
+    "shape": "Circle",
     "quantity": 750,
-    "price": 366.95
+    "price": 366.95,
+    "width": 3.5,
+    "height": 3.5,
+    "id": "0a838a19bd79"
   },
   {
-    "shape": "Square",
-    "size": "3.5\" x 3.5\"",
+    "shape": "Circle",
     "quantity": 1000,
-    "price": 420.67
+    "price": 420.67,
+    "width": 3.5,
+    "height": 3.5,
+    "id": "91b1c5374ad3"
   },
   {
-    "shape": "Square",
-    "size": "3.5\" x 3.5\"",
+    "shape": "Circle",
     "quantity": 1500,
-    "price": 594.98
+    "price": 594.98,
+    "width": 3.5,
+    "height": 3.5,
+    "id": "bc1948ba7aa5"
   },
   {
-    "shape": "Square",
-    "size": "3.5\" x 3.5\"",
+    "shape": "Circle",
     "quantity": 2000,
-    "price": 744.07
+    "price": 744.07,
+    "width": 3.5,
+    "height": 3.5,
+    "id": "e78f046be8a1"
   },
   {
-    "shape": "Square",
-    "size": "3.5\" x 3.5\"",
+    "shape": "Circle",
     "quantity": 2500,
-    "price": 873.73
+    "price": 873.73,
+    "width": 3.5,
+    "height": 3.5,
+    "id": "b7577b94c773"
   },
   {
-    "shape": "Square",
-    "size": "3.5\" x 3.5\"",
+    "shape": "Circle",
     "quantity": 3000,
-    "price": 1048.48
+    "price": 1048.48,
+    "width": 3.5,
+    "height": 3.5,
+    "id": "a04f7e140e42"
   },
   {
-    "shape": "Square",
-    "size": "3.5\" x 3.5\"",
+    "shape": "Circle",
     "quantity": 5000,
-    "price": 1423.45
+    "price": 1423.45,
+    "width": 3.5,
+    "height": 3.5,
+    "id": "ce00a33aab1c"
   },
   {
-    "shape": "Square",
-    "size": "3.5\" x 3.5\"",
+    "shape": "Circle",
     "quantity": 6000,
-    "price": 1708.14
+    "price": 1708.14,
+    "width": 3.5,
+    "height": 3.5,
+    "id": "d7f29bd3a4ee"
   },
   {
-    "shape": "Square",
-    "size": "3.5\" x 3.5\"",
+    "shape": "Circle",
     "quantity": 10000,
-    "price": 2589.65
+    "price": 2589.65,
+    "width": 3.5,
+    "height": 3.5,
+    "id": "36285e0a5663"
   },
   {
-    "shape": "Square",
-    "size": "3.5\" x 3.5\"",
+    "shape": "Circle",
     "quantity": 15000,
-    "price": 3722.78
+    "price": 3722.78,
+    "width": 3.5,
+    "height": 3.5,
+    "id": "bd332e96530e"
   },
   {
-    "shape": "Square",
-    "size": "3.5\" x 3.5\"",
+    "shape": "Circle",
     "quantity": 20000,
-    "price": 4944.1
+    "price": 4944.1,
+    "width": 3.5,
+    "height": 3.5,
+    "id": "5c244d2470bc"
+  },
+  {
+    "shape": "Circle",
+    "quantity": 25000,
+    "price": 6149.5,
+    "width": 3.5,
+    "height": 3.5,
+    "id": "923ab08882dc"
   },
   {
     "shape": "Square",
-    "size": "3.5\" x 3.5\"",
-    "quantity": 25000,
-    "price": 6149.5
+    "quantity": 50,
+    "price": 26.41,
+    "width": 2.0,
+    "height": 2.0,
+    "id": "5ca026f15a0c"
   },
-  { "shape": "Oval", "size": "3\" x 2\"", "quantity": 50, "price": 39.62 },
-  { "shape": "Oval", "size": "3\" x 2\"", "quantity": 100, "price": 52.3 },
-  { "shape": "Oval", "size": "3\" x 2\"", "quantity": 250, "price": 99.05 },
-  { "shape": "Oval", "size": "3\" x 2\"", "quantity": 300, "price": 118.85 },
-  { "shape": "Oval", "size": "3\" x 2\"", "quantity": 400, "price": 158.47 },
-  { "shape": "Oval", "size": "3\" x 2\"", "quantity": 500, "price": 130.89 },
-  { "shape": "Oval", "size": "3\" x 2\"", "quantity": 600, "price": 157.07 },
-  { "shape": "Oval", "size": "3\" x 2\"", "quantity": 750, "price": 179.73 },
-  { "shape": "Oval", "size": "3\" x 2\"", "quantity": 1000, "price": 206.04 },
-  { "shape": "Oval", "size": "3\" x 2\"", "quantity": 1500, "price": 291.42 },
-  { "shape": "Oval", "size": "3\" x 2\"", "quantity": 2000, "price": 364.44 },
-  { "shape": "Oval", "size": "3\" x 2\"", "quantity": 2500, "price": 427.95 },
-  { "shape": "Oval", "size": "3\" x 2\"", "quantity": 3000, "price": 513.54 },
-  { "shape": "Oval", "size": "3\" x 2\"", "quantity": 5000, "price": 697.2 },
-  { "shape": "Oval", "size": "3\" x 2\"", "quantity": 6000, "price": 836.64 },
-  { "shape": "Oval", "size": "3\" x 2\"", "quantity": 10000, "price": 1268.4 },
-  { "shape": "Oval", "size": "3\" x 2\"", "quantity": 15000, "price": 1823.4 },
-  { "shape": "Oval", "size": "3\" x 2\"", "quantity": 20000, "price": 2421.6 },
-  { "shape": "Oval", "size": "3\" x 2\"", "quantity": 25000, "price": 3012 },
-  { "shape": "Oval", "size": "4\" x 2\"", "quantity": 50, "price": 39.62 },
-  { "shape": "Oval", "size": "4\" x 2\"", "quantity": 100, "price": 52.3 },
-  { "shape": "Oval", "size": "4\" x 2\"", "quantity": 250, "price": 99.05 },
-  { "shape": "Oval", "size": "4\" x 2\"", "quantity": 300, "price": 118.85 },
-  { "shape": "Oval", "size": "4\" x 2\"", "quantity": 400, "price": 158.47 },
-  { "shape": "Oval", "size": "4\" x 2\"", "quantity": 500, "price": 130.89 },
-  { "shape": "Oval", "size": "4\" x 2\"", "quantity": 600, "price": 157.07 },
-  { "shape": "Oval", "size": "4\" x 2\"", "quantity": 750, "price": 179.73 },
-  { "shape": "Oval", "size": "4\" x 2\"", "quantity": 1000, "price": 206.04 },
-  { "shape": "Oval", "size": "4\" x 2\"", "quantity": 1500, "price": 291.42 },
-  { "shape": "Oval", "size": "4\" x 2\"", "quantity": 2000, "price": 364.44 },
-  { "shape": "Oval", "size": "4\" x 2\"", "quantity": 2500, "price": 427.95 },
-  { "shape": "Oval", "size": "4\" x 2\"", "quantity": 3000, "price": 513.54 },
-  { "shape": "Oval", "size": "4\" x 2\"", "quantity": 5000, "price": 697.2 },
-  { "shape": "Oval", "size": "4\" x 2\"", "quantity": 6000, "price": 836.64 },
-  { "shape": "Oval", "size": "4\" x 2\"", "quantity": 10000, "price": 1268.4 },
-  { "shape": "Oval", "size": "4\" x 2\"", "quantity": 15000, "price": 1823.4 },
-  { "shape": "Oval", "size": "4\" x 2\"", "quantity": 20000, "price": 2421.6 },
-  { "shape": "Oval", "size": "4\" x 2\"", "quantity": 25000, "price": 3012 },
-  { "shape": "Oval", "size": "5\" x 2\"", "quantity": 50, "price": 39.62 },
-  { "shape": "Oval", "size": "5\" x 2\"", "quantity": 100, "price": 52.3 },
-  { "shape": "Oval", "size": "5\" x 2\"", "quantity": 250, "price": 99.05 },
-  { "shape": "Oval", "size": "5\" x 2\"", "quantity": 300, "price": 118.85 },
-  { "shape": "Oval", "size": "5\" x 2\"", "quantity": 400, "price": 158.47 },
-  { "shape": "Oval", "size": "5\" x 2\"", "quantity": 500, "price": 130.89 },
-  { "shape": "Oval", "size": "5\" x 2\"", "quantity": 600, "price": 157.07 },
-  { "shape": "Oval", "size": "5\" x 2\"", "quantity": 750, "price": 179.73 },
-  { "shape": "Oval", "size": "5\" x 2\"", "quantity": 1000, "price": 206.04 },
-  { "shape": "Oval", "size": "5\" x 2\"", "quantity": 1500, "price": 291.42 },
-  { "shape": "Oval", "size": "5\" x 2\"", "quantity": 2000, "price": 364.44 },
-  { "shape": "Oval", "size": "5\" x 2\"", "quantity": 2500, "price": 427.95 },
-  { "shape": "Oval", "size": "5\" x 2\"", "quantity": 3000, "price": 513.54 },
-  { "shape": "Oval", "size": "5\" x 2\"", "quantity": 5000, "price": 697.2 },
-  { "shape": "Oval", "size": "5\" x 2\"", "quantity": 6000, "price": 836.64 },
-  { "shape": "Oval", "size": "5\" x 2\"", "quantity": 10000, "price": 1268.4 },
-  { "shape": "Oval", "size": "5\" x 2\"", "quantity": 15000, "price": 1823.4 },
-  { "shape": "Oval", "size": "5\" x 2\"", "quantity": 20000, "price": 2421.6 },
-  { "shape": "Oval", "size": "5\" x 2\"", "quantity": 25000, "price": 3012 },
-  { "shape": "Oval", "size": "5\" x 3\"", "quantity": 50, "price": 39.62 },
-  { "shape": "Oval", "size": "5\" x 3\"", "quantity": 100, "price": 52.3 },
-  { "shape": "Oval", "size": "5\" x 3\"", "quantity": 250, "price": 99.05 },
-  { "shape": "Oval", "size": "5\" x 3\"", "quantity": 300, "price": 118.85 },
-  { "shape": "Oval", "size": "5\" x 3\"", "quantity": 400, "price": 158.47 },
-  { "shape": "Oval", "size": "5\" x 3\"", "quantity": 500, "price": 130.89 },
-  { "shape": "Oval", "size": "5\" x 3\"", "quantity": 600, "price": 157.07 },
-  { "shape": "Oval", "size": "5\" x 3\"", "quantity": 750, "price": 179.73 },
-  { "shape": "Oval", "size": "5\" x 3\"", "quantity": 1000, "price": 206.04 },
-  { "shape": "Oval", "size": "5\" x 3\"", "quantity": 1500, "price": 291.42 },
-  { "shape": "Oval", "size": "5\" x 3\"", "quantity": 2000, "price": 364.44 },
-  { "shape": "Oval", "size": "5\" x 3\"", "quantity": 2500, "price": 427.95 },
-  { "shape": "Oval", "size": "5\" x 3\"", "quantity": 3000, "price": 513.54 },
-  { "shape": "Oval", "size": "5\" x 3\"", "quantity": 5000, "price": 697.2 },
-  { "shape": "Oval", "size": "5\" x 3\"", "quantity": 6000, "price": 836.64 },
-  { "shape": "Oval", "size": "5\" x 3\"", "quantity": 10000, "price": 1268.4 },
-  { "shape": "Oval", "size": "5\" x 3\"", "quantity": 15000, "price": 1823.4 },
-  { "shape": "Oval", "size": "5\" x 3\"", "quantity": 20000, "price": 2421.6 },
-  { "shape": "Oval", "size": "5\" x 3\"", "quantity": 25000, "price": 3012 },
-  { "shape": "Oval", "size": "2\" x 3\"", "quantity": 50, "price": 39.62 },
-  { "shape": "Oval", "size": "2\" x 3\"", "quantity": 100, "price": 52.3 },
-  { "shape": "Oval", "size": "2\" x 3\"", "quantity": 250, "price": 99.05 },
-  { "shape": "Oval", "size": "2\" x 3\"", "quantity": 300, "price": 118.85 },
-  { "shape": "Oval", "size": "2\" x 3\"", "quantity": 400, "price": 158.47 },
-  { "shape": "Oval", "size": "2\" x 3\"", "quantity": 500, "price": 130.89 },
-  { "shape": "Oval", "size": "2\" x 3\"", "quantity": 600, "price": 157.07 },
-  { "shape": "Oval", "size": "2\" x 3\"", "quantity": 750, "price": 179.73 },
-  { "shape": "Oval", "size": "2\" x 3\"", "quantity": 1000, "price": 206.04 },
-  { "shape": "Oval", "size": "2\" x 3\"", "quantity": 1500, "price": 291.42 },
-  { "shape": "Oval", "size": "2\" x 3\"", "quantity": 2000, "price": 364.44 },
-  { "shape": "Oval", "size": "2\" x 3\"", "quantity": 2500, "price": 427.95 },
-  { "shape": "Oval", "size": "2\" x 3\"", "quantity": 3000, "price": 513.54 },
-  { "shape": "Oval", "size": "2\" x 3\"", "quantity": 5000, "price": 697.2 },
-  { "shape": "Oval", "size": "2\" x 3\"", "quantity": 6000, "price": 836.64 },
-  { "shape": "Oval", "size": "2\" x 3\"", "quantity": 10000, "price": 1268.4 },
-  { "shape": "Oval", "size": "2\" x 3\"", "quantity": 15000, "price": 1823.4 },
-  { "shape": "Oval", "size": "2\" x 3\"", "quantity": 20000, "price": 2421.6 },
-  { "shape": "Oval", "size": "2\" x 3\"", "quantity": 25000, "price": 3012 },
-  { "shape": "Oval", "size": "2\" x 4\"", "quantity": 50, "price": 39.62 },
-  { "shape": "Oval", "size": "2\" x 4\"", "quantity": 100, "price": 52.3 },
-  { "shape": "Oval", "size": "2\" x 4\"", "quantity": 250, "price": 99.05 },
-  { "shape": "Oval", "size": "2\" x 4\"", "quantity": 300, "price": 118.85 },
-  { "shape": "Oval", "size": "2\" x 4\"", "quantity": 400, "price": 158.47 },
-  { "shape": "Oval", "size": "2\" x 4\"", "quantity": 500, "price": 130.89 },
-  { "shape": "Oval", "size": "2\" x 4\"", "quantity": 600, "price": 157.07 },
-  { "shape": "Oval", "size": "2\" x 4\"", "quantity": 750, "price": 179.73 },
-  { "shape": "Oval", "size": "2\" x 4\"", "quantity": 1000, "price": 206.04 },
-  { "shape": "Oval", "size": "2\" x 4\"", "quantity": 1500, "price": 291.42 },
-  { "shape": "Oval", "size": "2\" x 4\"", "quantity": 2000, "price": 364.44 },
-  { "shape": "Oval", "size": "2\" x 4\"", "quantity": 2500, "price": 427.95 },
-  { "shape": "Oval", "size": "2\" x 4\"", "quantity": 3000, "price": 513.54 },
-  { "shape": "Oval", "size": "2\" x 4\"", "quantity": 5000, "price": 697.2 },
-  { "shape": "Oval", "size": "2\" x 4\"", "quantity": 6000, "price": 836.64 },
-  { "shape": "Oval", "size": "2\" x 4\"", "quantity": 10000, "price": 1268.4 },
-  { "shape": "Oval", "size": "2\" x 4\"", "quantity": 15000, "price": 1823.4 },
-  { "shape": "Oval", "size": "2\" x 4\"", "quantity": 20000, "price": 2421.6 },
-  { "shape": "Oval", "size": "2\" x 4\"", "quantity": 25000, "price": 3012 },
-  { "shape": "Oval", "size": "2\" x 5\"", "quantity": 50, "price": 39.62 },
-  { "shape": "Oval", "size": "2\" x 5\"", "quantity": 100, "price": 52.3 },
-  { "shape": "Oval", "size": "2\" x 5\"", "quantity": 250, "price": 99.05 },
-  { "shape": "Oval", "size": "2\" x 5\"", "quantity": 300, "price": 118.85 },
-  { "shape": "Oval", "size": "2\" x 5\"", "quantity": 400, "price": 158.47 },
-  { "shape": "Oval", "size": "2\" x 5\"", "quantity": 500, "price": 130.89 },
-  { "shape": "Oval", "size": "2\" x 5\"", "quantity": 600, "price": 157.07 },
-  { "shape": "Oval", "size": "2\" x 5\"", "quantity": 750, "price": 179.73 },
-  { "shape": "Oval", "size": "2\" x 5\"", "quantity": 1000, "price": 206.04 },
-  { "shape": "Oval", "size": "2\" x 5\"", "quantity": 1500, "price": 291.42 },
-  { "shape": "Oval", "size": "2\" x 5\"", "quantity": 2000, "price": 364.44 },
-  { "shape": "Oval", "size": "2\" x 5\"", "quantity": 2500, "price": 427.95 },
-  { "shape": "Oval", "size": "2\" x 5\"", "quantity": 3000, "price": 513.54 },
-  { "shape": "Oval", "size": "2\" x 5\"", "quantity": 5000, "price": 697.2 },
-  { "shape": "Oval", "size": "2\" x 5\"", "quantity": 6000, "price": 836.64 },
-  { "shape": "Oval", "size": "2\" x 5\"", "quantity": 10000, "price": 1268.4 },
-  { "shape": "Oval", "size": "2\" x 5\"", "quantity": 15000, "price": 1823.4 },
-  { "shape": "Oval", "size": "2\" x 5\"", "quantity": 20000, "price": 2421.6 },
-  { "shape": "Oval", "size": "2\" x 5\"", "quantity": 25000, "price": 3012 },
-  { "shape": "Oval", "size": "3\" x 5\"", "quantity": 50, "price": 39.62 },
-  { "shape": "Oval", "size": "3\" x 5\"", "quantity": 100, "price": 52.3 },
-  { "shape": "Oval", "size": "3\" x 5\"", "quantity": 250, "price": 99.05 },
-  { "shape": "Oval", "size": "3\" x 5\"", "quantity": 300, "price": 118.85 },
-  { "shape": "Oval", "size": "3\" x 5\"", "quantity": 400, "price": 158.47 },
-  { "shape": "Oval", "size": "3\" x 5\"", "quantity": 500, "price": 130.89 },
-  { "shape": "Oval", "size": "3\" x 5\"", "quantity": 600, "price": 157.07 },
-  { "shape": "Oval", "size": "3\" x 5\"", "quantity": 750, "price": 179.73 },
-  { "shape": "Oval", "size": "3\" x 5\"", "quantity": 1000, "price": 206.04 },
-  { "shape": "Oval", "size": "3\" x 5\"", "quantity": 1500, "price": 291.42 },
-  { "shape": "Oval", "size": "3\" x 5\"", "quantity": 2000, "price": 364.44 },
-  { "shape": "Oval", "size": "3\" x 5\"", "quantity": 2500, "price": 427.95 },
-  { "shape": "Oval", "size": "3\" x 5\"", "quantity": 3000, "price": 513.54 },
-  { "shape": "Oval", "size": "3\" x 5\"", "quantity": 5000, "price": 697.2 },
-  { "shape": "Oval", "size": "3\" x 5\"", "quantity": 6000, "price": 836.64 },
-  { "shape": "Oval", "size": "3\" x 5\"", "quantity": 10000, "price": 1268.4 },
-  { "shape": "Oval", "size": "3\" x 5\"", "quantity": 15000, "price": 1823.4 },
-  { "shape": "Oval", "size": "3\" x 5\"", "quantity": 20000, "price": 2421.6 },
-  { "shape": "Oval", "size": "3\" x 5\"", "quantity": 25000, "price": 3012 },
-  { "shape": "Rectangle", "size": "3\" x 2\"", "quantity": 50, "price": 39.62 },
-  { "shape": "Rectangle", "size": "3\" x 2\"", "quantity": 100, "price": 52.3 },
   {
-    "shape": "Rectangle",
-    "size": "3\" x 2\"",
+    "shape": "Square",
+    "quantity": 100,
+    "price": 34.86,
+    "width": 2.0,
+    "height": 2.0,
+    "id": "062e0b5eaae8"
+  },
+  {
+    "shape": "Square",
     "quantity": 250,
-    "price": 99.05
+    "price": 66.03,
+    "width": 2.0,
+    "height": 2.0,
+    "id": "ef4de3c2963f"
   },
   {
-    "shape": "Rectangle",
-    "size": "3\" x 2\"",
+    "shape": "Square",
     "quantity": 300,
-    "price": 118.85
+    "price": 79.24,
+    "width": 2.0,
+    "height": 2.0,
+    "id": "a9b88c464a8c"
   },
   {
-    "shape": "Rectangle",
-    "size": "3\" x 2\"",
+    "shape": "Square",
     "quantity": 400,
-    "price": 158.47
+    "price": 105.65,
+    "width": 2.0,
+    "height": 2.0,
+    "id": "f7ee6cecc6cd"
   },
   {
-    "shape": "Rectangle",
-    "size": "3\" x 2\"",
+    "shape": "Square",
     "quantity": 500,
-    "price": 130.89
+    "price": 87.26,
+    "width": 2.0,
+    "height": 2.0,
+    "id": "d357c6f8d6c7"
   },
   {
-    "shape": "Rectangle",
-    "size": "3\" x 2\"",
+    "shape": "Square",
     "quantity": 600,
-    "price": 157.07
+    "price": 104.71,
+    "width": 2.0,
+    "height": 2.0,
+    "id": "8035a22df785"
   },
   {
-    "shape": "Rectangle",
-    "size": "3\" x 2\"",
+    "shape": "Square",
     "quantity": 750,
-    "price": 179.73
+    "price": 119.82,
+    "width": 2.0,
+    "height": 2.0,
+    "id": "bb57ce9200c5"
   },
   {
-    "shape": "Rectangle",
-    "size": "3\" x 2\"",
+    "shape": "Square",
     "quantity": 1000,
-    "price": 206.04
+    "price": 137.36,
+    "width": 2.0,
+    "height": 2.0,
+    "id": "66fe77104be9"
   },
   {
-    "shape": "Rectangle",
-    "size": "3\" x 2\"",
+    "shape": "Square",
     "quantity": 1500,
-    "price": 291.42
+    "price": 194.28,
+    "width": 2.0,
+    "height": 2.0,
+    "id": "e17671b56f58"
   },
   {
-    "shape": "Rectangle",
-    "size": "3\" x 2\"",
+    "shape": "Square",
     "quantity": 2000,
-    "price": 364.44
+    "price": 242.96,
+    "width": 2.0,
+    "height": 2.0,
+    "id": "a5d80f71d348"
   },
   {
-    "shape": "Rectangle",
-    "size": "3\" x 2\"",
+    "shape": "Square",
     "quantity": 2500,
-    "price": 427.95
+    "price": 285.3,
+    "width": 2.0,
+    "height": 2.0,
+    "id": "41895ab11315"
   },
   {
-    "shape": "Rectangle",
-    "size": "3\" x 2\"",
+    "shape": "Square",
     "quantity": 3000,
-    "price": 513.54
+    "price": 342.36,
+    "width": 2.0,
+    "height": 2.0,
+    "id": "f3fcf8d5787b"
   },
   {
-    "shape": "Rectangle",
-    "size": "3\" x 2\"",
+    "shape": "Square",
     "quantity": 5000,
-    "price": 697.2
+    "price": 464.8,
+    "width": 2.0,
+    "height": 2.0,
+    "id": "8eca5f307b61"
   },
   {
-    "shape": "Rectangle",
-    "size": "3\" x 2\"",
+    "shape": "Square",
     "quantity": 6000,
-    "price": 836.64
+    "price": 557.76,
+    "width": 2.0,
+    "height": 2.0,
+    "id": "a0af0b3cddb3"
   },
   {
-    "shape": "Rectangle",
-    "size": "3\" x 2\"",
+    "shape": "Square",
     "quantity": 10000,
-    "price": 1268.4
+    "price": 845.6,
+    "width": 2.0,
+    "height": 2.0,
+    "id": "db84f78513f5"
   },
   {
-    "shape": "Rectangle",
-    "size": "3\" x 2\"",
+    "shape": "Square",
     "quantity": 15000,
-    "price": 1823.4
+    "price": 1215.6,
+    "width": 2.0,
+    "height": 2.0,
+    "id": "c90b956c26df"
   },
   {
-    "shape": "Rectangle",
-    "size": "3\" x 2\"",
+    "shape": "Square",
     "quantity": 20000,
-    "price": 2421.6
+    "price": 1215.6,
+    "width": 2.0,
+    "height": 2.0,
+    "id": "8732b17070a6"
   },
   {
-    "shape": "Rectangle",
-    "size": "3\" x 2\"",
+    "shape": "Square",
     "quantity": 25000,
-    "price": 3012
+    "price": 1614.4,
+    "width": 2.0,
+    "height": 2.0,
+    "id": "aca2892c2ed8"
   },
-  { "shape": "Rectangle", "size": "4\" x 2\"", "quantity": 50, "price": 39.62 },
-  { "shape": "Rectangle", "size": "4\" x 2\"", "quantity": 100, "price": 52.3 },
   {
-    "shape": "Rectangle",
-    "size": "4\" x 2\"",
+    "shape": "Square",
+    "quantity": 50,
+    "price": 41.27,
+    "width": 2.5,
+    "height": 2.5,
+    "id": "1354863e558e"
+  },
+  {
+    "shape": "Square",
+    "quantity": 100,
+    "price": 54.48,
+    "width": 2.5,
+    "height": 2.5,
+    "id": "66a680bd7167"
+  },
+  {
+    "shape": "Square",
     "quantity": 250,
-    "price": 99.05
+    "price": 103.17,
+    "width": 2.5,
+    "height": 2.5,
+    "id": "7de95b974fb7"
   },
   {
-    "shape": "Rectangle",
-    "size": "4\" x 2\"",
+    "shape": "Square",
     "quantity": 300,
-    "price": 118.85
+    "price": 123.81,
+    "width": 2.5,
+    "height": 2.5,
+    "id": "68b852070cf6"
   },
   {
-    "shape": "Rectangle",
-    "size": "4\" x 2\"",
+    "shape": "Square",
     "quantity": 400,
-    "price": 158.47
+    "price": 165.08,
+    "width": 2.5,
+    "height": 2.5,
+    "id": "f993b762c3e5"
   },
   {
-    "shape": "Rectangle",
-    "size": "4\" x 2\"",
+    "shape": "Square",
     "quantity": 500,
-    "price": 130.89
+    "price": 136.34,
+    "width": 2.5,
+    "height": 2.5,
+    "id": "a90ce5e29c5e"
   },
   {
-    "shape": "Rectangle",
-    "size": "4\" x 2\"",
+    "shape": "Square",
     "quantity": 600,
-    "price": 157.07
+    "price": 163.61,
+    "width": 2.5,
+    "height": 2.5,
+    "id": "ddac4e6ddb4f"
   },
   {
-    "shape": "Rectangle",
-    "size": "4\" x 2\"",
+    "shape": "Square",
     "quantity": 750,
-    "price": 179.73
+    "price": 187.22,
+    "width": 2.5,
+    "height": 2.5,
+    "id": "388a7844a74d"
   },
   {
-    "shape": "Rectangle",
-    "size": "4\" x 2\"",
+    "shape": "Square",
     "quantity": 1000,
-    "price": 206.04
+    "price": 214.63,
+    "width": 2.5,
+    "height": 2.5,
+    "id": "9a1bbda4e6c3"
   },
   {
-    "shape": "Rectangle",
-    "size": "4\" x 2\"",
+    "shape": "Square",
     "quantity": 1500,
-    "price": 291.42
+    "price": 303.56,
+    "width": 2.5,
+    "height": 2.5,
+    "id": "574ffcc50d80"
   },
   {
-    "shape": "Rectangle",
-    "size": "4\" x 2\"",
+    "shape": "Square",
     "quantity": 2000,
-    "price": 364.44
+    "price": 379.63,
+    "width": 2.5,
+    "height": 2.5,
+    "id": "ab5773d5b6be"
   },
   {
-    "shape": "Rectangle",
-    "size": "4\" x 2\"",
+    "shape": "Square",
     "quantity": 2500,
-    "price": 427.95
+    "price": 445.78,
+    "width": 2.5,
+    "height": 2.5,
+    "id": "98a034f62089"
   },
   {
-    "shape": "Rectangle",
-    "size": "4\" x 2\"",
+    "shape": "Square",
     "quantity": 3000,
-    "price": 513.54
+    "price": 534.94,
+    "width": 2.5,
+    "height": 2.5,
+    "id": "1034942500c7"
   },
   {
-    "shape": "Rectangle",
-    "size": "4\" x 2\"",
+    "shape": "Square",
     "quantity": 5000,
-    "price": 697.2
+    "price": 726.25,
+    "width": 2.5,
+    "height": 2.5,
+    "id": "3fe169933379"
   },
   {
-    "shape": "Rectangle",
-    "size": "4\" x 2\"",
+    "shape": "Square",
     "quantity": 6000,
-    "price": 836.64
+    "price": 871.5,
+    "width": 2.5,
+    "height": 2.5,
+    "id": "afc3159f18de"
   },
   {
-    "shape": "Rectangle",
-    "size": "4\" x 2\"",
+    "shape": "Square",
     "quantity": 10000,
-    "price": 1268.4
+    "price": 1321.25,
+    "width": 2.5,
+    "height": 2.5,
+    "id": "685cfc4a51f4"
   },
   {
-    "shape": "Rectangle",
-    "size": "4\" x 2\"",
+    "shape": "Square",
     "quantity": 15000,
-    "price": 1823.4
+    "price": 1899.38,
+    "width": 2.5,
+    "height": 2.5,
+    "id": "b0df55b0334a"
   },
   {
-    "shape": "Rectangle",
-    "size": "4\" x 2\"",
+    "shape": "Square",
     "quantity": 20000,
-    "price": 2421.6
+    "price": 2522.5,
+    "width": 2.5,
+    "height": 2.5,
+    "id": "71e6593a9a52"
   },
   {
-    "shape": "Rectangle",
-    "size": "4\" x 2\"",
+    "shape": "Square",
     "quantity": 25000,
-    "price": 3012
+    "price": 3137.5,
+    "width": 2.5,
+    "height": 2.5,
+    "id": "c6fbc67ec0c8"
   },
-  { "shape": "Rectangle", "size": "5\" x 2\"", "quantity": 50, "price": 39.62 },
-  { "shape": "Rectangle", "size": "5\" x 2\"", "quantity": 100, "price": 52.3 },
   {
-    "shape": "Rectangle",
-    "size": "5\" x 2\"",
+    "shape": "Square",
+    "quantity": 50,
+    "price": 59.43,
+    "width": 3.0,
+    "height": 3.0,
+    "id": "20714fe11c2f"
+  },
+  {
+    "shape": "Square",
+    "quantity": 100,
+    "price": 78.44,
+    "width": 3.0,
+    "height": 3.0,
+    "id": "b755ee7279bf"
+  },
+  {
+    "shape": "Square",
     "quantity": 250,
-    "price": 99.05
+    "price": 148.57,
+    "width": 3.0,
+    "height": 3.0,
+    "id": "ee8b0efe76f2"
   },
   {
-    "shape": "Rectangle",
-    "size": "5\" x 2\"",
+    "shape": "Square",
     "quantity": 300,
-    "price": 118.85
+    "price": 178.28,
+    "width": 3.0,
+    "height": 3.0,
+    "id": "878a4fb4a110"
   },
   {
-    "shape": "Rectangle",
-    "size": "5\" x 2\"",
+    "shape": "Square",
     "quantity": 400,
-    "price": 158.47
+    "price": 237.71,
+    "width": 3.0,
+    "height": 3.0,
+    "id": "d3fd9a01e056"
   },
   {
-    "shape": "Rectangle",
-    "size": "5\" x 2\"",
+    "shape": "Square",
     "quantity": 500,
-    "price": 130.89
+    "price": 196.34,
+    "width": 3.0,
+    "height": 3.0,
+    "id": "919732ee38d5"
   },
   {
-    "shape": "Rectangle",
-    "size": "5\" x 2\"",
+    "shape": "Square",
     "quantity": 600,
-    "price": 157.07
+    "price": 235.6,
+    "width": 3.0,
+    "height": 3.0,
+    "id": "32ccdbf45bf9"
   },
   {
-    "shape": "Rectangle",
-    "size": "5\" x 2\"",
+    "shape": "Square",
     "quantity": 750,
-    "price": 179.73
+    "price": 269.6,
+    "width": 3.0,
+    "height": 3.0,
+    "id": "4eb55b93427f"
   },
   {
-    "shape": "Rectangle",
-    "size": "5\" x 2\"",
+    "shape": "Square",
     "quantity": 1000,
-    "price": 206.04
+    "price": 309.06,
+    "width": 3.0,
+    "height": 3.0,
+    "id": "52d9aa56316c"
   },
   {
-    "shape": "Rectangle",
-    "size": "5\" x 2\"",
+    "shape": "Square",
     "quantity": 1500,
-    "price": 291.42
+    "price": 437.13,
+    "width": 3.0,
+    "height": 3.0,
+    "id": "df2a8f63cd24"
   },
   {
-    "shape": "Rectangle",
-    "size": "5\" x 2\"",
+    "shape": "Square",
     "quantity": 2000,
-    "price": 364.44
+    "price": 546.66,
+    "width": 3.0,
+    "height": 3.0,
+    "id": "3fe6c73a5666"
   },
   {
-    "shape": "Rectangle",
-    "size": "5\" x 2\"",
+    "shape": "Square",
     "quantity": 2500,
-    "price": 427.95
+    "price": 641.93,
+    "width": 3.0,
+    "height": 3.0,
+    "id": "49057d77d816"
   },
   {
-    "shape": "Rectangle",
-    "size": "5\" x 2\"",
+    "shape": "Square",
     "quantity": 3000,
-    "price": 513.54
+    "price": 770.31,
+    "width": 3.0,
+    "height": 3.0,
+    "id": "a46c0edbbb11"
   },
   {
-    "shape": "Rectangle",
-    "size": "5\" x 2\"",
+    "shape": "Square",
     "quantity": 5000,
-    "price": 697.2
+    "price": 1045.8,
+    "width": 3.0,
+    "height": 3.0,
+    "id": "86090eef2090"
   },
   {
-    "shape": "Rectangle",
-    "size": "5\" x 2\"",
+    "shape": "Square",
     "quantity": 6000,
-    "price": 836.64
+    "price": 1254.96,
+    "width": 3.0,
+    "height": 3.0,
+    "id": "03d4623cc80c"
   },
   {
-    "shape": "Rectangle",
-    "size": "5\" x 2\"",
+    "shape": "Square",
     "quantity": 10000,
-    "price": 1268.4
+    "price": 1902.6,
+    "width": 3.0,
+    "height": 3.0,
+    "id": "490b57046ea9"
   },
   {
-    "shape": "Rectangle",
-    "size": "5\" x 2\"",
+    "shape": "Square",
     "quantity": 15000,
-    "price": 1823.4
+    "price": 2735.1,
+    "width": 3.0,
+    "height": 3.0,
+    "id": "0e7ec576d466"
   },
   {
-    "shape": "Rectangle",
-    "size": "5\" x 2\"",
+    "shape": "Square",
     "quantity": 20000,
-    "price": 2421.6
+    "price": 3632.4,
+    "width": 3.0,
+    "height": 3.0,
+    "id": "d59c550b3a35"
   },
   {
-    "shape": "Rectangle",
-    "size": "5\" x 2\"",
+    "shape": "Square",
     "quantity": 25000,
-    "price": 3012
+    "price": 4518,
+    "width": 3.0,
+    "height": 3.0,
+    "id": "dbfbb92e30cf"
   },
-  { "shape": "Rectangle", "size": "5\" x 3\"", "quantity": 50, "price": 39.62 },
-  { "shape": "Rectangle", "size": "5\" x 3\"", "quantity": 100, "price": 52.3 },
   {
-    "shape": "Rectangle",
-    "size": "5\" x 3\"",
+    "shape": "Square",
+    "quantity": 50,
+    "price": 80.89,
+    "width": 3.5,
+    "height": 3.5,
+    "id": "d9b82a14b0a6"
+  },
+  {
+    "shape": "Square",
+    "quantity": 100,
+    "price": 106.77,
+    "width": 3.5,
+    "height": 3.5,
+    "id": "bcee78d3ea7b"
+  },
+  {
+    "shape": "Square",
     "quantity": 250,
-    "price": 99.05
+    "price": 202.22,
+    "width": 3.5,
+    "height": 3.5,
+    "id": "1353ef27476f"
   },
   {
-    "shape": "Rectangle",
-    "size": "5\" x 3\"",
+    "shape": "Square",
     "quantity": 300,
-    "price": 118.85
+    "price": 242.66,
+    "width": 3.5,
+    "height": 3.5,
+    "id": "a220773f5cfb"
   },
   {
-    "shape": "Rectangle",
-    "size": "5\" x 3\"",
+    "shape": "Square",
     "quantity": 400,
-    "price": 158.47
+    "price": 323.55,
+    "width": 3.5,
+    "height": 3.5,
+    "id": "5e5bb432bb4a"
   },
   {
-    "shape": "Rectangle",
-    "size": "5\" x 3\"",
+    "shape": "Square",
     "quantity": 500,
-    "price": 130.89
+    "price": 267.23,
+    "width": 3.5,
+    "height": 3.5,
+    "id": "452bd4827a0f"
   },
   {
-    "shape": "Rectangle",
-    "size": "5\" x 3\"",
+    "shape": "Square",
     "quantity": 600,
-    "price": 157.07
+    "price": 320.68,
+    "width": 3.5,
+    "height": 3.5,
+    "id": "daee3d8acfc9"
   },
   {
-    "shape": "Rectangle",
-    "size": "5\" x 3\"",
+    "shape": "Square",
     "quantity": 750,
-    "price": 179.73
+    "price": 366.95,
+    "width": 3.5,
+    "height": 3.5,
+    "id": "b8e957fc335f"
   },
   {
-    "shape": "Rectangle",
-    "size": "5\" x 3\"",
+    "shape": "Square",
     "quantity": 1000,
-    "price": 206.04
+    "price": 420.67,
+    "width": 3.5,
+    "height": 3.5,
+    "id": "1954ee4d496e"
   },
   {
-    "shape": "Rectangle",
-    "size": "5\" x 3\"",
+    "shape": "Square",
     "quantity": 1500,
-    "price": 291.42
+    "price": 594.98,
+    "width": 3.5,
+    "height": 3.5,
+    "id": "94f1d1cec710"
   },
   {
-    "shape": "Rectangle",
-    "size": "5\" x 3\"",
+    "shape": "Square",
     "quantity": 2000,
-    "price": 364.44
+    "price": 744.07,
+    "width": 3.5,
+    "height": 3.5,
+    "id": "473341538833"
   },
   {
-    "shape": "Rectangle",
-    "size": "5\" x 3\"",
+    "shape": "Square",
     "quantity": 2500,
-    "price": 427.95
+    "price": 873.73,
+    "width": 3.5,
+    "height": 3.5,
+    "id": "701b203a9b35"
   },
   {
-    "shape": "Rectangle",
-    "size": "5\" x 3\"",
+    "shape": "Square",
     "quantity": 3000,
-    "price": 513.54
+    "price": 1048.48,
+    "width": 3.5,
+    "height": 3.5,
+    "id": "58ec4f5b06be"
   },
   {
-    "shape": "Rectangle",
-    "size": "5\" x 3\"",
+    "shape": "Square",
     "quantity": 5000,
-    "price": 697.2
+    "price": 1423.45,
+    "width": 3.5,
+    "height": 3.5,
+    "id": "30f104aa52cc"
   },
   {
-    "shape": "Rectangle",
-    "size": "5\" x 3\"",
+    "shape": "Square",
     "quantity": 6000,
-    "price": 836.64
+    "price": 1708.14,
+    "width": 3.5,
+    "height": 3.5,
+    "id": "2daea185d91a"
   },
   {
-    "shape": "Rectangle",
-    "size": "5\" x 3\"",
+    "shape": "Square",
     "quantity": 10000,
-    "price": 1268.4
+    "price": 2589.65,
+    "width": 3.5,
+    "height": 3.5,
+    "id": "75a34a7be639"
   },
   {
-    "shape": "Rectangle",
-    "size": "5\" x 3\"",
+    "shape": "Square",
     "quantity": 15000,
-    "price": 1823.4
+    "price": 3722.78,
+    "width": 3.5,
+    "height": 3.5,
+    "id": "8276095d68b5"
   },
   {
-    "shape": "Rectangle",
-    "size": "5\" x 3\"",
+    "shape": "Square",
     "quantity": 20000,
-    "price": 2421.6
+    "price": 4944.1,
+    "width": 3.5,
+    "height": 3.5,
+    "id": "766d83297e97"
   },
   {
-    "shape": "Rectangle",
-    "size": "5\" x 3\"",
+    "shape": "Square",
     "quantity": 25000,
-    "price": 3012
+    "price": 6149.5,
+    "width": 3.5,
+    "height": 3.5,
+    "id": "a439ee6e6cf5"
   },
-  { "shape": "Rectangle", "size": "2\" x 3\"", "quantity": 50, "price": 39.62 },
-  { "shape": "Rectangle", "size": "2\" x 3\"", "quantity": 100, "price": 52.3 },
   {
-    "shape": "Rectangle",
-    "size": "2\" x 3\"",
+    "shape": "Oval",
+    "quantity": 50,
+    "price": 39.62,
+    "width": 3.0,
+    "height": 2.0,
+    "id": "d7dfdc39e973"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 100,
+    "price": 52.3,
+    "width": 3.0,
+    "height": 2.0,
+    "id": "c6c5327fe226"
+  },
+  {
+    "shape": "Oval",
     "quantity": 250,
-    "price": 99.05
+    "price": 99.05,
+    "width": 3.0,
+    "height": 2.0,
+    "id": "957df9eee3cc"
   },
   {
-    "shape": "Rectangle",
-    "size": "2\" x 3\"",
+    "shape": "Oval",
     "quantity": 300,
-    "price": 118.85
+    "price": 118.85,
+    "width": 3.0,
+    "height": 2.0,
+    "id": "a57f65ae1f9a"
   },
   {
-    "shape": "Rectangle",
-    "size": "2\" x 3\"",
+    "shape": "Oval",
     "quantity": 400,
-    "price": 158.47
+    "price": 158.47,
+    "width": 3.0,
+    "height": 2.0,
+    "id": "0e8e98299078"
   },
   {
-    "shape": "Rectangle",
-    "size": "2\" x 3\"",
+    "shape": "Oval",
     "quantity": 500,
-    "price": 130.89
+    "price": 130.89,
+    "width": 3.0,
+    "height": 2.0,
+    "id": "8af89b355337"
   },
   {
-    "shape": "Rectangle",
-    "size": "2\" x 3\"",
+    "shape": "Oval",
     "quantity": 600,
-    "price": 157.07
+    "price": 157.07,
+    "width": 3.0,
+    "height": 2.0,
+    "id": "ad802c93dcb9"
   },
   {
-    "shape": "Rectangle",
-    "size": "2\" x 3\"",
+    "shape": "Oval",
     "quantity": 750,
-    "price": 179.73
+    "price": 179.73,
+    "width": 3.0,
+    "height": 2.0,
+    "id": "5b291081dc27"
   },
   {
-    "shape": "Rectangle",
-    "size": "2\" x 3\"",
+    "shape": "Oval",
     "quantity": 1000,
-    "price": 206.04
+    "price": 206.04,
+    "width": 3.0,
+    "height": 2.0,
+    "id": "68d7703481d4"
   },
   {
-    "shape": "Rectangle",
-    "size": "2\" x 3\"",
+    "shape": "Oval",
     "quantity": 1500,
-    "price": 291.42
+    "price": 291.42,
+    "width": 3.0,
+    "height": 2.0,
+    "id": "ba921dc524c2"
   },
   {
-    "shape": "Rectangle",
-    "size": "2\" x 3\"",
+    "shape": "Oval",
     "quantity": 2000,
-    "price": 364.44
+    "price": 364.44,
+    "width": 3.0,
+    "height": 2.0,
+    "id": "3aa37f9be59c"
   },
   {
-    "shape": "Rectangle",
-    "size": "2\" x 3\"",
+    "shape": "Oval",
     "quantity": 2500,
-    "price": 427.95
+    "price": 427.95,
+    "width": 3.0,
+    "height": 2.0,
+    "id": "761232042acb"
   },
   {
-    "shape": "Rectangle",
-    "size": "2\" x 3\"",
+    "shape": "Oval",
     "quantity": 3000,
-    "price": 513.54
+    "price": 513.54,
+    "width": 3.0,
+    "height": 2.0,
+    "id": "0993cbfa6395"
   },
   {
-    "shape": "Rectangle",
-    "size": "2\" x 3\"",
+    "shape": "Oval",
     "quantity": 5000,
-    "price": 697.2
+    "price": 697.2,
+    "width": 3.0,
+    "height": 2.0,
+    "id": "ab3adfacd370"
   },
   {
-    "shape": "Rectangle",
-    "size": "2\" x 3\"",
+    "shape": "Oval",
     "quantity": 6000,
-    "price": 836.64
+    "price": 836.64,
+    "width": 3.0,
+    "height": 2.0,
+    "id": "a49ed00c9ba6"
   },
   {
-    "shape": "Rectangle",
-    "size": "2\" x 3\"",
+    "shape": "Oval",
     "quantity": 10000,
-    "price": 1268.4
+    "price": 1268.4,
+    "width": 3.0,
+    "height": 2.0,
+    "id": "52a46b33a70e"
   },
   {
-    "shape": "Rectangle",
-    "size": "2\" x 3\"",
+    "shape": "Oval",
     "quantity": 15000,
-    "price": 1823.4
+    "price": 1823.4,
+    "width": 3.0,
+    "height": 2.0,
+    "id": "c1d3ef2c0059"
   },
   {
-    "shape": "Rectangle",
-    "size": "2\" x 3\"",
+    "shape": "Oval",
     "quantity": 20000,
-    "price": 2421.6
+    "price": 2421.6,
+    "width": 3.0,
+    "height": 2.0,
+    "id": "c7ea5c32c57d"
   },
   {
-    "shape": "Rectangle",
-    "size": "2\" x 3\"",
+    "shape": "Oval",
     "quantity": 25000,
-    "price": 3012
+    "price": 3012,
+    "width": 3.0,
+    "height": 2.0,
+    "id": "cd8b40bd2213"
   },
-  { "shape": "Rectangle", "size": "2\" x 4\"", "quantity": 50, "price": 39.62 },
-  { "shape": "Rectangle", "size": "2\" x 4\"", "quantity": 100, "price": 52.3 },
   {
-    "shape": "Rectangle",
-    "size": "2\" x 4\"",
+    "shape": "Oval",
+    "quantity": 50,
+    "price": 39.62,
+    "width": 4.0,
+    "height": 2.0,
+    "id": "28fcc4da0b89"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 100,
+    "price": 52.3,
+    "width": 4.0,
+    "height": 2.0,
+    "id": "596a67970217"
+  },
+  {
+    "shape": "Oval",
     "quantity": 250,
-    "price": 99.05
+    "price": 99.05,
+    "width": 4.0,
+    "height": 2.0,
+    "id": "4ae489dda6f3"
   },
   {
-    "shape": "Rectangle",
-    "size": "2\" x 4\"",
+    "shape": "Oval",
     "quantity": 300,
-    "price": 118.85
+    "price": 118.85,
+    "width": 4.0,
+    "height": 2.0,
+    "id": "a2f6916b26f1"
   },
   {
-    "shape": "Rectangle",
-    "size": "2\" x 4\"",
+    "shape": "Oval",
     "quantity": 400,
-    "price": 158.47
+    "price": 158.47,
+    "width": 4.0,
+    "height": 2.0,
+    "id": "851af8d42e99"
   },
   {
-    "shape": "Rectangle",
-    "size": "2\" x 4\"",
+    "shape": "Oval",
     "quantity": 500,
-    "price": 130.89
+    "price": 130.89,
+    "width": 4.0,
+    "height": 2.0,
+    "id": "16e47b20cff7"
   },
   {
-    "shape": "Rectangle",
-    "size": "2\" x 4\"",
+    "shape": "Oval",
     "quantity": 600,
-    "price": 157.07
+    "price": 157.07,
+    "width": 4.0,
+    "height": 2.0,
+    "id": "36ffa76e2783"
   },
   {
-    "shape": "Rectangle",
-    "size": "2\" x 4\"",
+    "shape": "Oval",
     "quantity": 750,
-    "price": 179.73
+    "price": 179.73,
+    "width": 4.0,
+    "height": 2.0,
+    "id": "7f8d5d003eab"
   },
   {
-    "shape": "Rectangle",
-    "size": "2\" x 4\"",
+    "shape": "Oval",
     "quantity": 1000,
-    "price": 206.04
+    "price": 206.04,
+    "width": 4.0,
+    "height": 2.0,
+    "id": "99009c3fb8a5"
   },
   {
-    "shape": "Rectangle",
-    "size": "2\" x 4\"",
+    "shape": "Oval",
     "quantity": 1500,
-    "price": 291.42
+    "price": 291.42,
+    "width": 4.0,
+    "height": 2.0,
+    "id": "a3512bbe7747"
   },
   {
-    "shape": "Rectangle",
-    "size": "2\" x 4\"",
+    "shape": "Oval",
     "quantity": 2000,
-    "price": 364.44
+    "price": 364.44,
+    "width": 4.0,
+    "height": 2.0,
+    "id": "616ec5592f56"
   },
   {
-    "shape": "Rectangle",
-    "size": "2\" x 4\"",
+    "shape": "Oval",
     "quantity": 2500,
-    "price": 427.95
+    "price": 427.95,
+    "width": 4.0,
+    "height": 2.0,
+    "id": "a2ade2d759de"
   },
   {
-    "shape": "Rectangle",
-    "size": "2\" x 4\"",
+    "shape": "Oval",
     "quantity": 3000,
-    "price": 513.54
+    "price": 513.54,
+    "width": 4.0,
+    "height": 2.0,
+    "id": "afb1e2441d92"
   },
   {
-    "shape": "Rectangle",
-    "size": "2\" x 4\"",
+    "shape": "Oval",
     "quantity": 5000,
-    "price": 697.2
+    "price": 697.2,
+    "width": 4.0,
+    "height": 2.0,
+    "id": "b6bbb8fe9882"
   },
   {
-    "shape": "Rectangle",
-    "size": "2\" x 4\"",
+    "shape": "Oval",
     "quantity": 6000,
-    "price": 836.64
+    "price": 836.64,
+    "width": 4.0,
+    "height": 2.0,
+    "id": "1f44ce059c69"
   },
   {
-    "shape": "Rectangle",
-    "size": "2\" x 4\"",
+    "shape": "Oval",
     "quantity": 10000,
-    "price": 1268.4
+    "price": 1268.4,
+    "width": 4.0,
+    "height": 2.0,
+    "id": "3295ee4627d1"
   },
   {
-    "shape": "Rectangle",
-    "size": "2\" x 4\"",
+    "shape": "Oval",
     "quantity": 15000,
-    "price": 1823.4
+    "price": 1823.4,
+    "width": 4.0,
+    "height": 2.0,
+    "id": "2341168c68d8"
   },
   {
-    "shape": "Rectangle",
-    "size": "2\" x 4\"",
+    "shape": "Oval",
     "quantity": 20000,
-    "price": 2421.6
+    "price": 2421.6,
+    "width": 4.0,
+    "height": 2.0,
+    "id": "f16b58511214"
   },
   {
-    "shape": "Rectangle",
-    "size": "2\" x 4\"",
+    "shape": "Oval",
     "quantity": 25000,
-    "price": 3012
+    "price": 3012,
+    "width": 4.0,
+    "height": 2.0,
+    "id": "c0d66c78ea85"
   },
-  { "shape": "Rectangle", "size": "2\" x 5\"", "quantity": 50, "price": 39.62 },
-  { "shape": "Rectangle", "size": "2\" x 5\"", "quantity": 100, "price": 52.3 },
   {
-    "shape": "Rectangle",
-    "size": "2\" x 5\"",
+    "shape": "Oval",
+    "quantity": 50,
+    "price": 39.62,
+    "width": 5.0,
+    "height": 2.0,
+    "id": "0c5be6682773"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 100,
+    "price": 52.3,
+    "width": 5.0,
+    "height": 2.0,
+    "id": "38efa42727cd"
+  },
+  {
+    "shape": "Oval",
     "quantity": 250,
-    "price": 99.05
+    "price": 99.05,
+    "width": 5.0,
+    "height": 2.0,
+    "id": "2b0e0731c4bd"
   },
   {
-    "shape": "Rectangle",
-    "size": "2\" x 5\"",
+    "shape": "Oval",
     "quantity": 300,
-    "price": 118.85
+    "price": 118.85,
+    "width": 5.0,
+    "height": 2.0,
+    "id": "360a37c22440"
   },
   {
-    "shape": "Rectangle",
-    "size": "2\" x 5\"",
+    "shape": "Oval",
     "quantity": 400,
-    "price": 158.47
+    "price": 158.47,
+    "width": 5.0,
+    "height": 2.0,
+    "id": "9311d348bccb"
   },
   {
-    "shape": "Rectangle",
-    "size": "2\" x 5\"",
+    "shape": "Oval",
     "quantity": 500,
-    "price": 130.89
+    "price": 130.89,
+    "width": 5.0,
+    "height": 2.0,
+    "id": "4238fb48c395"
   },
   {
-    "shape": "Rectangle",
-    "size": "2\" x 5\"",
+    "shape": "Oval",
     "quantity": 600,
-    "price": 157.07
+    "price": 157.07,
+    "width": 5.0,
+    "height": 2.0,
+    "id": "86192a45caad"
   },
   {
-    "shape": "Rectangle",
-    "size": "2\" x 5\"",
+    "shape": "Oval",
     "quantity": 750,
-    "price": 179.73
+    "price": 179.73,
+    "width": 5.0,
+    "height": 2.0,
+    "id": "ea6c3fe38942"
   },
   {
-    "shape": "Rectangle",
-    "size": "2\" x 5\"",
+    "shape": "Oval",
     "quantity": 1000,
-    "price": 206.04
+    "price": 206.04,
+    "width": 5.0,
+    "height": 2.0,
+    "id": "d3af21690a00"
   },
   {
-    "shape": "Rectangle",
-    "size": "2\" x 5\"",
+    "shape": "Oval",
     "quantity": 1500,
-    "price": 291.42
+    "price": 291.42,
+    "width": 5.0,
+    "height": 2.0,
+    "id": "b7353682ad4d"
   },
   {
-    "shape": "Rectangle",
-    "size": "2\" x 5\"",
+    "shape": "Oval",
     "quantity": 2000,
-    "price": 364.44
+    "price": 364.44,
+    "width": 5.0,
+    "height": 2.0,
+    "id": "5761bd01c530"
   },
   {
-    "shape": "Rectangle",
-    "size": "2\" x 5\"",
+    "shape": "Oval",
     "quantity": 2500,
-    "price": 427.95
+    "price": 427.95,
+    "width": 5.0,
+    "height": 2.0,
+    "id": "ce3c63a3d43c"
   },
   {
-    "shape": "Rectangle",
-    "size": "2\" x 5\"",
+    "shape": "Oval",
     "quantity": 3000,
-    "price": 513.54
+    "price": 513.54,
+    "width": 5.0,
+    "height": 2.0,
+    "id": "24f0a409913e"
   },
   {
-    "shape": "Rectangle",
-    "size": "2\" x 5\"",
+    "shape": "Oval",
     "quantity": 5000,
-    "price": 697.2
+    "price": 697.2,
+    "width": 5.0,
+    "height": 2.0,
+    "id": "8f6c89f6c68b"
   },
   {
-    "shape": "Rectangle",
-    "size": "2\" x 5\"",
+    "shape": "Oval",
     "quantity": 6000,
-    "price": 836.64
+    "price": 836.64,
+    "width": 5.0,
+    "height": 2.0,
+    "id": "57505fa49167"
   },
   {
-    "shape": "Rectangle",
-    "size": "2\" x 5\"",
+    "shape": "Oval",
     "quantity": 10000,
-    "price": 1268.4
+    "price": 1268.4,
+    "width": 5.0,
+    "height": 2.0,
+    "id": "202710b3a0ed"
   },
   {
-    "shape": "Rectangle",
-    "size": "2\" x 5\"",
+    "shape": "Oval",
     "quantity": 15000,
-    "price": 1823.4
+    "price": 1823.4,
+    "width": 5.0,
+    "height": 2.0,
+    "id": "ce6633c89330"
   },
   {
-    "shape": "Rectangle",
-    "size": "2\" x 5\"",
+    "shape": "Oval",
     "quantity": 20000,
-    "price": 2421.6
+    "price": 2421.6,
+    "width": 5.0,
+    "height": 2.0,
+    "id": "a9231c3bb2f1"
   },
   {
-    "shape": "Rectangle",
-    "size": "2\" x 5\"",
+    "shape": "Oval",
     "quantity": 25000,
-    "price": 3012
+    "price": 3012,
+    "width": 5.0,
+    "height": 2.0,
+    "id": "e0c3ffff88d7"
   },
-  { "shape": "Rectangle", "size": "3\" x 5\"", "quantity": 50, "price": 39.62 },
-  { "shape": "Rectangle", "size": "3\" x 5\"", "quantity": 100, "price": 52.3 },
   {
-    "shape": "Rectangle",
-    "size": "3\" x 5\"",
+    "shape": "Oval",
+    "quantity": 50,
+    "price": 39.62,
+    "width": 5.0,
+    "height": 3.0,
+    "id": "a38fd55fa97d"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 100,
+    "price": 52.3,
+    "width": 5.0,
+    "height": 3.0,
+    "id": "452dc24863c7"
+  },
+  {
+    "shape": "Oval",
     "quantity": 250,
-    "price": 99.05
+    "price": 99.05,
+    "width": 5.0,
+    "height": 3.0,
+    "id": "20b948dc26d1"
   },
   {
-    "shape": "Rectangle",
-    "size": "3\" x 5\"",
+    "shape": "Oval",
     "quantity": 300,
-    "price": 118.85
+    "price": 118.85,
+    "width": 5.0,
+    "height": 3.0,
+    "id": "06d3df235b0b"
   },
   {
-    "shape": "Rectangle",
-    "size": "3\" x 5\"",
+    "shape": "Oval",
     "quantity": 400,
-    "price": 158.47
+    "price": 158.47,
+    "width": 5.0,
+    "height": 3.0,
+    "id": "27070dd819ce"
   },
   {
-    "shape": "Rectangle",
-    "size": "3\" x 5\"",
+    "shape": "Oval",
     "quantity": 500,
-    "price": 130.89
+    "price": 130.89,
+    "width": 5.0,
+    "height": 3.0,
+    "id": "bf03d98ddcd9"
   },
   {
-    "shape": "Rectangle",
-    "size": "3\" x 5\"",
+    "shape": "Oval",
     "quantity": 600,
-    "price": 157.07
+    "price": 157.07,
+    "width": 5.0,
+    "height": 3.0,
+    "id": "e309d8c6479c"
   },
   {
-    "shape": "Rectangle",
-    "size": "3\" x 5\"",
+    "shape": "Oval",
     "quantity": 750,
-    "price": 179.73
+    "price": 179.73,
+    "width": 5.0,
+    "height": 3.0,
+    "id": "588f5b0bb233"
   },
   {
-    "shape": "Rectangle",
-    "size": "3\" x 5\"",
+    "shape": "Oval",
     "quantity": 1000,
-    "price": 206.04
+    "price": 206.04,
+    "width": 5.0,
+    "height": 3.0,
+    "id": "14019243c3f2"
   },
   {
-    "shape": "Rectangle",
-    "size": "3\" x 5\"",
+    "shape": "Oval",
     "quantity": 1500,
-    "price": 291.42
+    "price": 291.42,
+    "width": 5.0,
+    "height": 3.0,
+    "id": "4dbbcfd859d3"
   },
   {
-    "shape": "Rectangle",
-    "size": "3\" x 5\"",
+    "shape": "Oval",
     "quantity": 2000,
-    "price": 364.44
+    "price": 364.44,
+    "width": 5.0,
+    "height": 3.0,
+    "id": "191610f48a31"
   },
   {
-    "shape": "Rectangle",
-    "size": "3\" x 5\"",
+    "shape": "Oval",
     "quantity": 2500,
-    "price": 427.95
+    "price": 427.95,
+    "width": 5.0,
+    "height": 3.0,
+    "id": "6592de01c1b4"
   },
   {
-    "shape": "Rectangle",
-    "size": "3\" x 5\"",
+    "shape": "Oval",
     "quantity": 3000,
-    "price": 513.54
+    "price": 513.54,
+    "width": 5.0,
+    "height": 3.0,
+    "id": "70256b9b8863"
   },
   {
-    "shape": "Rectangle",
-    "size": "3\" x 5\"",
+    "shape": "Oval",
     "quantity": 5000,
-    "price": 697.2
+    "price": 697.2,
+    "width": 5.0,
+    "height": 3.0,
+    "id": "14228fc1313d"
   },
   {
-    "shape": "Rectangle",
-    "size": "3\" x 5\"",
+    "shape": "Oval",
     "quantity": 6000,
-    "price": 836.64
+    "price": 836.64,
+    "width": 5.0,
+    "height": 3.0,
+    "id": "b2d0d2fc9482"
   },
   {
-    "shape": "Rectangle",
-    "size": "3\" x 5\"",
+    "shape": "Oval",
     "quantity": 10000,
-    "price": 1268.4
+    "price": 1268.4,
+    "width": 5.0,
+    "height": 3.0,
+    "id": "a576b1b29f17"
   },
   {
-    "shape": "Rectangle",
-    "size": "3\" x 5\"",
+    "shape": "Oval",
     "quantity": 15000,
-    "price": 1823.4
+    "price": 1823.4,
+    "width": 5.0,
+    "height": 3.0,
+    "id": "502926891fb9"
   },
   {
-    "shape": "Rectangle",
-    "size": "3\" x 5\"",
+    "shape": "Oval",
     "quantity": 20000,
-    "price": 2421.6
+    "price": 2421.6,
+    "width": 5.0,
+    "height": 3.0,
+    "id": "2a0399c1983c"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 25000,
+    "price": 3012,
+    "width": 5.0,
+    "height": 3.0,
+    "id": "13efb666ffb3"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 50,
+    "price": 39.62,
+    "width": 2.0,
+    "height": 3.0,
+    "id": "0254ba15daa2"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 100,
+    "price": 52.3,
+    "width": 2.0,
+    "height": 3.0,
+    "id": "702215620c11"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 250,
+    "price": 99.05,
+    "width": 2.0,
+    "height": 3.0,
+    "id": "ab071c707bfd"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 300,
+    "price": 118.85,
+    "width": 2.0,
+    "height": 3.0,
+    "id": "f057a8cd9118"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 400,
+    "price": 158.47,
+    "width": 2.0,
+    "height": 3.0,
+    "id": "fbe661e4c6f8"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 500,
+    "price": 130.89,
+    "width": 2.0,
+    "height": 3.0,
+    "id": "ba7d0705d978"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 600,
+    "price": 157.07,
+    "width": 2.0,
+    "height": 3.0,
+    "id": "4aab65776975"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 750,
+    "price": 179.73,
+    "width": 2.0,
+    "height": 3.0,
+    "id": "6d0647c84c28"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 1000,
+    "price": 206.04,
+    "width": 2.0,
+    "height": 3.0,
+    "id": "80eec0898bc5"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 1500,
+    "price": 291.42,
+    "width": 2.0,
+    "height": 3.0,
+    "id": "f1a37807de1d"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 2000,
+    "price": 364.44,
+    "width": 2.0,
+    "height": 3.0,
+    "id": "a37379861293"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 2500,
+    "price": 427.95,
+    "width": 2.0,
+    "height": 3.0,
+    "id": "23c04deab1de"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 3000,
+    "price": 513.54,
+    "width": 2.0,
+    "height": 3.0,
+    "id": "38532a720c7b"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 5000,
+    "price": 697.2,
+    "width": 2.0,
+    "height": 3.0,
+    "id": "55479f612100"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 6000,
+    "price": 836.64,
+    "width": 2.0,
+    "height": 3.0,
+    "id": "9d0f40f924ec"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 10000,
+    "price": 1268.4,
+    "width": 2.0,
+    "height": 3.0,
+    "id": "530e49671713"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 15000,
+    "price": 1823.4,
+    "width": 2.0,
+    "height": 3.0,
+    "id": "ce7f2e3ff491"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 20000,
+    "price": 2421.6,
+    "width": 2.0,
+    "height": 3.0,
+    "id": "d63999641631"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 25000,
+    "price": 3012,
+    "width": 2.0,
+    "height": 3.0,
+    "id": "5c7483fa91e6"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 50,
+    "price": 39.62,
+    "width": 2.0,
+    "height": 4.0,
+    "id": "1fcff59c9c95"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 100,
+    "price": 52.3,
+    "width": 2.0,
+    "height": 4.0,
+    "id": "79d94f0af418"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 250,
+    "price": 99.05,
+    "width": 2.0,
+    "height": 4.0,
+    "id": "deec75ad68d9"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 300,
+    "price": 118.85,
+    "width": 2.0,
+    "height": 4.0,
+    "id": "a59a10997161"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 400,
+    "price": 158.47,
+    "width": 2.0,
+    "height": 4.0,
+    "id": "65e8ad7f3063"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 500,
+    "price": 130.89,
+    "width": 2.0,
+    "height": 4.0,
+    "id": "5f8da6873006"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 600,
+    "price": 157.07,
+    "width": 2.0,
+    "height": 4.0,
+    "id": "dd9da510ee5c"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 750,
+    "price": 179.73,
+    "width": 2.0,
+    "height": 4.0,
+    "id": "4e5206902c62"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 1000,
+    "price": 206.04,
+    "width": 2.0,
+    "height": 4.0,
+    "id": "ad9cfc80c287"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 1500,
+    "price": 291.42,
+    "width": 2.0,
+    "height": 4.0,
+    "id": "d9ed0d7a98be"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 2000,
+    "price": 364.44,
+    "width": 2.0,
+    "height": 4.0,
+    "id": "be3da00d71cc"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 2500,
+    "price": 427.95,
+    "width": 2.0,
+    "height": 4.0,
+    "id": "3cadda001c72"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 3000,
+    "price": 513.54,
+    "width": 2.0,
+    "height": 4.0,
+    "id": "a47f95ec8da7"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 5000,
+    "price": 697.2,
+    "width": 2.0,
+    "height": 4.0,
+    "id": "1b67c87f431f"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 6000,
+    "price": 836.64,
+    "width": 2.0,
+    "height": 4.0,
+    "id": "573b34d11733"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 10000,
+    "price": 1268.4,
+    "width": 2.0,
+    "height": 4.0,
+    "id": "f4ab6d946dde"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 15000,
+    "price": 1823.4,
+    "width": 2.0,
+    "height": 4.0,
+    "id": "42c201bfc0c2"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 20000,
+    "price": 2421.6,
+    "width": 2.0,
+    "height": 4.0,
+    "id": "4a670b7ff03f"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 25000,
+    "price": 3012,
+    "width": 2.0,
+    "height": 4.0,
+    "id": "ece2694066ed"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 50,
+    "price": 39.62,
+    "width": 2.0,
+    "height": 5.0,
+    "id": "6f73a003515a"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 100,
+    "price": 52.3,
+    "width": 2.0,
+    "height": 5.0,
+    "id": "2c6e15fc6a75"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 250,
+    "price": 99.05,
+    "width": 2.0,
+    "height": 5.0,
+    "id": "0859e355b390"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 300,
+    "price": 118.85,
+    "width": 2.0,
+    "height": 5.0,
+    "id": "aff1341c4cf0"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 400,
+    "price": 158.47,
+    "width": 2.0,
+    "height": 5.0,
+    "id": "5c024f91beb0"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 500,
+    "price": 130.89,
+    "width": 2.0,
+    "height": 5.0,
+    "id": "7904c6f3ab7e"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 600,
+    "price": 157.07,
+    "width": 2.0,
+    "height": 5.0,
+    "id": "0a25c45e2175"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 750,
+    "price": 179.73,
+    "width": 2.0,
+    "height": 5.0,
+    "id": "ffe5c7ef594d"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 1000,
+    "price": 206.04,
+    "width": 2.0,
+    "height": 5.0,
+    "id": "9c0d7c7416dd"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 1500,
+    "price": 291.42,
+    "width": 2.0,
+    "height": 5.0,
+    "id": "2869ba4f2122"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 2000,
+    "price": 364.44,
+    "width": 2.0,
+    "height": 5.0,
+    "id": "4492b82975c2"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 2500,
+    "price": 427.95,
+    "width": 2.0,
+    "height": 5.0,
+    "id": "49340e646d2c"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 3000,
+    "price": 513.54,
+    "width": 2.0,
+    "height": 5.0,
+    "id": "e4a9cfee8316"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 5000,
+    "price": 697.2,
+    "width": 2.0,
+    "height": 5.0,
+    "id": "a28c582286cf"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 6000,
+    "price": 836.64,
+    "width": 2.0,
+    "height": 5.0,
+    "id": "4d934200f0a7"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 10000,
+    "price": 1268.4,
+    "width": 2.0,
+    "height": 5.0,
+    "id": "2d438dfb252a"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 15000,
+    "price": 1823.4,
+    "width": 2.0,
+    "height": 5.0,
+    "id": "ae47f0346aec"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 20000,
+    "price": 2421.6,
+    "width": 2.0,
+    "height": 5.0,
+    "id": "5b98ed931842"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 25000,
+    "price": 3012,
+    "width": 2.0,
+    "height": 5.0,
+    "id": "e3cf20e7ad4b"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 50,
+    "price": 39.62,
+    "width": 3.0,
+    "height": 5.0,
+    "id": "b4310687efd1"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 100,
+    "price": 52.3,
+    "width": 3.0,
+    "height": 5.0,
+    "id": "531d841a737f"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 250,
+    "price": 99.05,
+    "width": 3.0,
+    "height": 5.0,
+    "id": "7e8c8f5daaaa"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 300,
+    "price": 118.85,
+    "width": 3.0,
+    "height": 5.0,
+    "id": "54a2aa169df5"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 400,
+    "price": 158.47,
+    "width": 3.0,
+    "height": 5.0,
+    "id": "7ab4f2b1302e"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 500,
+    "price": 130.89,
+    "width": 3.0,
+    "height": 5.0,
+    "id": "1ecd6e93dc70"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 600,
+    "price": 157.07,
+    "width": 3.0,
+    "height": 5.0,
+    "id": "b4ed8ee096dd"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 750,
+    "price": 179.73,
+    "width": 3.0,
+    "height": 5.0,
+    "id": "98ebd8a9c53b"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 1000,
+    "price": 206.04,
+    "width": 3.0,
+    "height": 5.0,
+    "id": "138632d55e85"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 1500,
+    "price": 291.42,
+    "width": 3.0,
+    "height": 5.0,
+    "id": "f15482d69eeb"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 2000,
+    "price": 364.44,
+    "width": 3.0,
+    "height": 5.0,
+    "id": "5dcfc7ed55cf"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 2500,
+    "price": 427.95,
+    "width": 3.0,
+    "height": 5.0,
+    "id": "996725c2e8dd"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 3000,
+    "price": 513.54,
+    "width": 3.0,
+    "height": 5.0,
+    "id": "193e3c1641a4"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 5000,
+    "price": 697.2,
+    "width": 3.0,
+    "height": 5.0,
+    "id": "75b4cd3adcee"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 6000,
+    "price": 836.64,
+    "width": 3.0,
+    "height": 5.0,
+    "id": "52a37548f71f"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 10000,
+    "price": 1268.4,
+    "width": 3.0,
+    "height": 5.0,
+    "id": "db718a8c511d"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 15000,
+    "price": 1823.4,
+    "width": 3.0,
+    "height": 5.0,
+    "id": "b2a5de7102c1"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 20000,
+    "price": 2421.6,
+    "width": 3.0,
+    "height": 5.0,
+    "id": "8757319bedfa"
+  },
+  {
+    "shape": "Oval",
+    "quantity": 25000,
+    "price": 3012,
+    "width": 3.0,
+    "height": 5.0,
+    "id": "c88814f7a7ec"
   },
   {
     "shape": "Rectangle",
-    "size": "3\" x 5\"",
+    "quantity": 50,
+    "price": 39.62,
+    "width": 3.0,
+    "height": 2.0,
+    "id": "1721f297919b"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 100,
+    "price": 52.3,
+    "width": 3.0,
+    "height": 2.0,
+    "id": "992f1e4192b7"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 250,
+    "price": 99.05,
+    "width": 3.0,
+    "height": 2.0,
+    "id": "4581d153d21b"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 300,
+    "price": 118.85,
+    "width": 3.0,
+    "height": 2.0,
+    "id": "5b50bc120f12"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 400,
+    "price": 158.47,
+    "width": 3.0,
+    "height": 2.0,
+    "id": "a3088f69b611"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 500,
+    "price": 130.89,
+    "width": 3.0,
+    "height": 2.0,
+    "id": "e2ce1e6c19f1"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 600,
+    "price": 157.07,
+    "width": 3.0,
+    "height": 2.0,
+    "id": "1cf4e268a34f"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 750,
+    "price": 179.73,
+    "width": 3.0,
+    "height": 2.0,
+    "id": "b0127fda6485"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 1000,
+    "price": 206.04,
+    "width": 3.0,
+    "height": 2.0,
+    "id": "bb43ff57645e"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 1500,
+    "price": 291.42,
+    "width": 3.0,
+    "height": 2.0,
+    "id": "628a36dbdb16"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 2000,
+    "price": 364.44,
+    "width": 3.0,
+    "height": 2.0,
+    "id": "ad02b2786000"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 2500,
+    "price": 427.95,
+    "width": 3.0,
+    "height": 2.0,
+    "id": "0ed13609a4c7"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 3000,
+    "price": 513.54,
+    "width": 3.0,
+    "height": 2.0,
+    "id": "3310e821c512"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 5000,
+    "price": 697.2,
+    "width": 3.0,
+    "height": 2.0,
+    "id": "e03d5df98830"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 6000,
+    "price": 836.64,
+    "width": 3.0,
+    "height": 2.0,
+    "id": "3466d24a29e5"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 10000,
+    "price": 1268.4,
+    "width": 3.0,
+    "height": 2.0,
+    "id": "335cada2828f"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 15000,
+    "price": 1823.4,
+    "width": 3.0,
+    "height": 2.0,
+    "id": "f292b603a163"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 20000,
+    "price": 2421.6,
+    "width": 3.0,
+    "height": 2.0,
+    "id": "52d7c583492a"
+  },
+  {
+    "shape": "Rectangle",
     "quantity": 25000,
-    "price": 3012
+    "price": 3012,
+    "width": 3.0,
+    "height": 2.0,
+    "id": "89d09364d802"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 50,
+    "price": 39.62,
+    "width": 4.0,
+    "height": 2.0,
+    "id": "0e8c30f8585c"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 100,
+    "price": 52.3,
+    "width": 4.0,
+    "height": 2.0,
+    "id": "3d30fea93762"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 250,
+    "price": 99.05,
+    "width": 4.0,
+    "height": 2.0,
+    "id": "cb92801c9c67"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 300,
+    "price": 118.85,
+    "width": 4.0,
+    "height": 2.0,
+    "id": "b99199748968"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 400,
+    "price": 158.47,
+    "width": 4.0,
+    "height": 2.0,
+    "id": "10cbbe060193"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 500,
+    "price": 130.89,
+    "width": 4.0,
+    "height": 2.0,
+    "id": "f9887b3afb3a"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 600,
+    "price": 157.07,
+    "width": 4.0,
+    "height": 2.0,
+    "id": "ef3715fa99ea"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 750,
+    "price": 179.73,
+    "width": 4.0,
+    "height": 2.0,
+    "id": "6a4179d03a0f"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 1000,
+    "price": 206.04,
+    "width": 4.0,
+    "height": 2.0,
+    "id": "64f3d2bcc3d9"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 1500,
+    "price": 291.42,
+    "width": 4.0,
+    "height": 2.0,
+    "id": "660d5040e30b"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 2000,
+    "price": 364.44,
+    "width": 4.0,
+    "height": 2.0,
+    "id": "8696e7412ce7"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 2500,
+    "price": 427.95,
+    "width": 4.0,
+    "height": 2.0,
+    "id": "9511d5a1b488"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 3000,
+    "price": 513.54,
+    "width": 4.0,
+    "height": 2.0,
+    "id": "4e1d6ef09855"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 5000,
+    "price": 697.2,
+    "width": 4.0,
+    "height": 2.0,
+    "id": "61b63dc4ee51"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 6000,
+    "price": 836.64,
+    "width": 4.0,
+    "height": 2.0,
+    "id": "8902bc89bfa7"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 10000,
+    "price": 1268.4,
+    "width": 4.0,
+    "height": 2.0,
+    "id": "9de1955d2daa"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 15000,
+    "price": 1823.4,
+    "width": 4.0,
+    "height": 2.0,
+    "id": "8d517b08a510"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 20000,
+    "price": 2421.6,
+    "width": 4.0,
+    "height": 2.0,
+    "id": "0c2f2ada663c"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 25000,
+    "price": 3012,
+    "width": 4.0,
+    "height": 2.0,
+    "id": "c732898a7209"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 50,
+    "price": 39.62,
+    "width": 5.0,
+    "height": 2.0,
+    "id": "b48e3583361b"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 100,
+    "price": 52.3,
+    "width": 5.0,
+    "height": 2.0,
+    "id": "24091dea1f9b"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 250,
+    "price": 99.05,
+    "width": 5.0,
+    "height": 2.0,
+    "id": "58556649c446"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 300,
+    "price": 118.85,
+    "width": 5.0,
+    "height": 2.0,
+    "id": "2c1b558f675f"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 400,
+    "price": 158.47,
+    "width": 5.0,
+    "height": 2.0,
+    "id": "1e36cc050d96"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 500,
+    "price": 130.89,
+    "width": 5.0,
+    "height": 2.0,
+    "id": "e2026668c550"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 600,
+    "price": 157.07,
+    "width": 5.0,
+    "height": 2.0,
+    "id": "9aaf2ee76456"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 750,
+    "price": 179.73,
+    "width": 5.0,
+    "height": 2.0,
+    "id": "294cec5bdcef"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 1000,
+    "price": 206.04,
+    "width": 5.0,
+    "height": 2.0,
+    "id": "46895ba9c698"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 1500,
+    "price": 291.42,
+    "width": 5.0,
+    "height": 2.0,
+    "id": "ccd5b5be8d5e"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 2000,
+    "price": 364.44,
+    "width": 5.0,
+    "height": 2.0,
+    "id": "ce6f20360d31"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 2500,
+    "price": 427.95,
+    "width": 5.0,
+    "height": 2.0,
+    "id": "bf599b32af7c"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 3000,
+    "price": 513.54,
+    "width": 5.0,
+    "height": 2.0,
+    "id": "8994ea4c0dc7"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 5000,
+    "price": 697.2,
+    "width": 5.0,
+    "height": 2.0,
+    "id": "e861ce4680cc"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 6000,
+    "price": 836.64,
+    "width": 5.0,
+    "height": 2.0,
+    "id": "bad2e1bc77fa"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 10000,
+    "price": 1268.4,
+    "width": 5.0,
+    "height": 2.0,
+    "id": "3d38f0772f43"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 15000,
+    "price": 1823.4,
+    "width": 5.0,
+    "height": 2.0,
+    "id": "1ec38158d665"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 20000,
+    "price": 2421.6,
+    "width": 5.0,
+    "height": 2.0,
+    "id": "6a6fc7d44790"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 25000,
+    "price": 3012,
+    "width": 5.0,
+    "height": 2.0,
+    "id": "f313966bc9f7"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 50,
+    "price": 39.62,
+    "width": 5.0,
+    "height": 3.0,
+    "id": "246b87b54f69"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 100,
+    "price": 52.3,
+    "width": 5.0,
+    "height": 3.0,
+    "id": "3b9651f31093"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 250,
+    "price": 99.05,
+    "width": 5.0,
+    "height": 3.0,
+    "id": "eaf35d5a15cc"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 300,
+    "price": 118.85,
+    "width": 5.0,
+    "height": 3.0,
+    "id": "8480ef59c413"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 400,
+    "price": 158.47,
+    "width": 5.0,
+    "height": 3.0,
+    "id": "febc8d0425d1"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 500,
+    "price": 130.89,
+    "width": 5.0,
+    "height": 3.0,
+    "id": "da8eaf9502d9"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 600,
+    "price": 157.07,
+    "width": 5.0,
+    "height": 3.0,
+    "id": "7eb38d0c76e5"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 750,
+    "price": 179.73,
+    "width": 5.0,
+    "height": 3.0,
+    "id": "b48dec33f4bc"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 1000,
+    "price": 206.04,
+    "width": 5.0,
+    "height": 3.0,
+    "id": "7537dc1da381"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 1500,
+    "price": 291.42,
+    "width": 5.0,
+    "height": 3.0,
+    "id": "a6d2475b6bb9"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 2000,
+    "price": 364.44,
+    "width": 5.0,
+    "height": 3.0,
+    "id": "3c743af30751"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 2500,
+    "price": 427.95,
+    "width": 5.0,
+    "height": 3.0,
+    "id": "35be45a9c3fa"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 3000,
+    "price": 513.54,
+    "width": 5.0,
+    "height": 3.0,
+    "id": "a322518bf3ad"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 5000,
+    "price": 697.2,
+    "width": 5.0,
+    "height": 3.0,
+    "id": "909164ead5d1"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 6000,
+    "price": 836.64,
+    "width": 5.0,
+    "height": 3.0,
+    "id": "5094b7febbb3"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 10000,
+    "price": 1268.4,
+    "width": 5.0,
+    "height": 3.0,
+    "id": "89cf6369c131"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 15000,
+    "price": 1823.4,
+    "width": 5.0,
+    "height": 3.0,
+    "id": "c0ee101eb1e0"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 20000,
+    "price": 2421.6,
+    "width": 5.0,
+    "height": 3.0,
+    "id": "95b0fd849049"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 25000,
+    "price": 3012,
+    "width": 5.0,
+    "height": 3.0,
+    "id": "9c1cf7ed87fa"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 50,
+    "price": 39.62,
+    "width": 2.0,
+    "height": 3.0,
+    "id": "0cfe2abb61a4"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 100,
+    "price": 52.3,
+    "width": 2.0,
+    "height": 3.0,
+    "id": "d18b212515a7"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 250,
+    "price": 99.05,
+    "width": 2.0,
+    "height": 3.0,
+    "id": "875469a05b7e"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 300,
+    "price": 118.85,
+    "width": 2.0,
+    "height": 3.0,
+    "id": "3c2fd25e7aaf"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 400,
+    "price": 158.47,
+    "width": 2.0,
+    "height": 3.0,
+    "id": "9b8f22d84926"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 500,
+    "price": 130.89,
+    "width": 2.0,
+    "height": 3.0,
+    "id": "2f0c1453d492"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 600,
+    "price": 157.07,
+    "width": 2.0,
+    "height": 3.0,
+    "id": "1e50b536a797"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 750,
+    "price": 179.73,
+    "width": 2.0,
+    "height": 3.0,
+    "id": "d2ebaad1e891"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 1000,
+    "price": 206.04,
+    "width": 2.0,
+    "height": 3.0,
+    "id": "16f3d8f52e25"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 1500,
+    "price": 291.42,
+    "width": 2.0,
+    "height": 3.0,
+    "id": "136383c1b68c"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 2000,
+    "price": 364.44,
+    "width": 2.0,
+    "height": 3.0,
+    "id": "e5e9f78d267f"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 2500,
+    "price": 427.95,
+    "width": 2.0,
+    "height": 3.0,
+    "id": "606e73b6d41e"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 3000,
+    "price": 513.54,
+    "width": 2.0,
+    "height": 3.0,
+    "id": "88ba2d137b8d"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 5000,
+    "price": 697.2,
+    "width": 2.0,
+    "height": 3.0,
+    "id": "9de9c40360d7"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 6000,
+    "price": 836.64,
+    "width": 2.0,
+    "height": 3.0,
+    "id": "878cf653a2de"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 10000,
+    "price": 1268.4,
+    "width": 2.0,
+    "height": 3.0,
+    "id": "4e74ee2d6a33"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 15000,
+    "price": 1823.4,
+    "width": 2.0,
+    "height": 3.0,
+    "id": "5f529a507aa3"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 20000,
+    "price": 2421.6,
+    "width": 2.0,
+    "height": 3.0,
+    "id": "ea7861cb4f72"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 25000,
+    "price": 3012,
+    "width": 2.0,
+    "height": 3.0,
+    "id": "2bd938b7d148"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 50,
+    "price": 39.62,
+    "width": 2.0,
+    "height": 4.0,
+    "id": "55cc51ce0720"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 100,
+    "price": 52.3,
+    "width": 2.0,
+    "height": 4.0,
+    "id": "794619c24a84"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 250,
+    "price": 99.05,
+    "width": 2.0,
+    "height": 4.0,
+    "id": "18df1b4c75b1"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 300,
+    "price": 118.85,
+    "width": 2.0,
+    "height": 4.0,
+    "id": "ad256c55c0b4"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 400,
+    "price": 158.47,
+    "width": 2.0,
+    "height": 4.0,
+    "id": "a47579b1cbde"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 500,
+    "price": 130.89,
+    "width": 2.0,
+    "height": 4.0,
+    "id": "bccadd47d1ea"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 600,
+    "price": 157.07,
+    "width": 2.0,
+    "height": 4.0,
+    "id": "04ee1c98b90e"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 750,
+    "price": 179.73,
+    "width": 2.0,
+    "height": 4.0,
+    "id": "cfcf9db94e1f"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 1000,
+    "price": 206.04,
+    "width": 2.0,
+    "height": 4.0,
+    "id": "a5eac9bebfc5"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 1500,
+    "price": 291.42,
+    "width": 2.0,
+    "height": 4.0,
+    "id": "b65b50fc4468"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 2000,
+    "price": 364.44,
+    "width": 2.0,
+    "height": 4.0,
+    "id": "04c8afbbe2ef"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 2500,
+    "price": 427.95,
+    "width": 2.0,
+    "height": 4.0,
+    "id": "aea5bebdcd3c"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 3000,
+    "price": 513.54,
+    "width": 2.0,
+    "height": 4.0,
+    "id": "687a67ad86ba"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 5000,
+    "price": 697.2,
+    "width": 2.0,
+    "height": 4.0,
+    "id": "fcaf60631bfd"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 6000,
+    "price": 836.64,
+    "width": 2.0,
+    "height": 4.0,
+    "id": "471c65f64380"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 10000,
+    "price": 1268.4,
+    "width": 2.0,
+    "height": 4.0,
+    "id": "4bf833162abd"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 15000,
+    "price": 1823.4,
+    "width": 2.0,
+    "height": 4.0,
+    "id": "e920c0b73aee"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 20000,
+    "price": 2421.6,
+    "width": 2.0,
+    "height": 4.0,
+    "id": "8316194e15c7"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 25000,
+    "price": 3012,
+    "width": 2.0,
+    "height": 4.0,
+    "id": "b588b961ed7f"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 50,
+    "price": 39.62,
+    "width": 2.0,
+    "height": 5.0,
+    "id": "20e81df712f7"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 100,
+    "price": 52.3,
+    "width": 2.0,
+    "height": 5.0,
+    "id": "bb3cd89f9fdb"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 250,
+    "price": 99.05,
+    "width": 2.0,
+    "height": 5.0,
+    "id": "3b997ecde093"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 300,
+    "price": 118.85,
+    "width": 2.0,
+    "height": 5.0,
+    "id": "2bdce7dbe4b4"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 400,
+    "price": 158.47,
+    "width": 2.0,
+    "height": 5.0,
+    "id": "d9137c4ec81c"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 500,
+    "price": 130.89,
+    "width": 2.0,
+    "height": 5.0,
+    "id": "2ef41767b160"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 600,
+    "price": 157.07,
+    "width": 2.0,
+    "height": 5.0,
+    "id": "808f6893d7ee"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 750,
+    "price": 179.73,
+    "width": 2.0,
+    "height": 5.0,
+    "id": "759186e5daca"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 1000,
+    "price": 206.04,
+    "width": 2.0,
+    "height": 5.0,
+    "id": "15a6981ab320"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 1500,
+    "price": 291.42,
+    "width": 2.0,
+    "height": 5.0,
+    "id": "14df6d2407df"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 2000,
+    "price": 364.44,
+    "width": 2.0,
+    "height": 5.0,
+    "id": "187b665c8390"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 2500,
+    "price": 427.95,
+    "width": 2.0,
+    "height": 5.0,
+    "id": "05c2dca1cb72"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 3000,
+    "price": 513.54,
+    "width": 2.0,
+    "height": 5.0,
+    "id": "772f12e067ba"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 5000,
+    "price": 697.2,
+    "width": 2.0,
+    "height": 5.0,
+    "id": "9bc43fbd65ee"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 6000,
+    "price": 836.64,
+    "width": 2.0,
+    "height": 5.0,
+    "id": "c4bba8302b1a"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 10000,
+    "price": 1268.4,
+    "width": 2.0,
+    "height": 5.0,
+    "id": "6846fc7ed94c"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 15000,
+    "price": 1823.4,
+    "width": 2.0,
+    "height": 5.0,
+    "id": "32aae98a074b"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 20000,
+    "price": 2421.6,
+    "width": 2.0,
+    "height": 5.0,
+    "id": "8d232d82e87e"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 25000,
+    "price": 3012,
+    "width": 2.0,
+    "height": 5.0,
+    "id": "147bbbf56b85"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 50,
+    "price": 39.62,
+    "width": 3.0,
+    "height": 5.0,
+    "id": "0e61111afd00"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 100,
+    "price": 52.3,
+    "width": 3.0,
+    "height": 5.0,
+    "id": "186dc6dd13c4"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 250,
+    "price": 99.05,
+    "width": 3.0,
+    "height": 5.0,
+    "id": "2708de2eb6b2"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 300,
+    "price": 118.85,
+    "width": 3.0,
+    "height": 5.0,
+    "id": "42bb82eb2dcb"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 400,
+    "price": 158.47,
+    "width": 3.0,
+    "height": 5.0,
+    "id": "154ace0925a8"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 500,
+    "price": 130.89,
+    "width": 3.0,
+    "height": 5.0,
+    "id": "8ee024463ab0"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 600,
+    "price": 157.07,
+    "width": 3.0,
+    "height": 5.0,
+    "id": "1418b9b0baa7"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 750,
+    "price": 179.73,
+    "width": 3.0,
+    "height": 5.0,
+    "id": "eea92d6491e3"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 1000,
+    "price": 206.04,
+    "width": 3.0,
+    "height": 5.0,
+    "id": "b6f604962aa6"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 1500,
+    "price": 291.42,
+    "width": 3.0,
+    "height": 5.0,
+    "id": "bc2c092e35f1"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 2000,
+    "price": 364.44,
+    "width": 3.0,
+    "height": 5.0,
+    "id": "3801bcb86883"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 2500,
+    "price": 427.95,
+    "width": 3.0,
+    "height": 5.0,
+    "id": "9fefb1109c36"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 3000,
+    "price": 513.54,
+    "width": 3.0,
+    "height": 5.0,
+    "id": "6ff2c5c31362"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 5000,
+    "price": 697.2,
+    "width": 3.0,
+    "height": 5.0,
+    "id": "5fe3cda64ffe"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 6000,
+    "price": 836.64,
+    "width": 3.0,
+    "height": 5.0,
+    "id": "b1371cc7aeb6"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 10000,
+    "price": 1268.4,
+    "width": 3.0,
+    "height": 5.0,
+    "id": "787187fe9046"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 15000,
+    "price": 1823.4,
+    "width": 3.0,
+    "height": 5.0,
+    "id": "ca589ae4c490"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 20000,
+    "price": 2421.6,
+    "width": 3.0,
+    "height": 5.0,
+    "id": "9cc3902be1e7"
+  },
+  {
+    "shape": "Rectangle",
+    "quantity": 25000,
+    "price": 3012,
+    "width": 3.0,
+    "height": 5.0,
+    "id": "df632a3344cf"
   }
 ]

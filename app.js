@@ -2,8 +2,10 @@ let allPrices = [];
 
 document.addEventListener("DOMContentLoaded", function () {
   console.log("DOM fully loaded and parsed");
-  loadPrices();
   setupFormValidation();
+
+  // Extract price data from the HTML table
+  extractPriceDataFromTable();
 
   // Change this line to use the form's submit event instead of a specific button
   document.getElementById("orderForm").addEventListener("submit", handleSubmit);
@@ -25,34 +27,14 @@ document.addEventListener("DOMContentLoaded", function () {
   checkoutButton.id = "addToCart";
 });
 
-function loadPrices() {
-  console.log("Loading prices...");
-  fetch("prices.json")
-    .then((response) => {
-      console.log("Received response from fetch");
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-      return response.json();
-    })
-    .then((prices) => {
-      console.log("Prices loaded successfully", prices);
-      allPrices = prices;
-      localStorage.setItem("prices", JSON.stringify(prices));
-      updateForm();
-    })
-    .catch((error) => {
-      console.error("Error loading prices:", error);
-      document.getElementById("priceTable").innerHTML =
-        "Error loading prices. Please try refreshing the page.";
-    });
+function formatSize(width, height) {
+  return `${width}" x ${height}"`;
 }
 
 function updateForm() {
   updateSizeOptions();
   updateQuantityOptions();
   updatePriceDisplay();
-  updatePriceTable();
 }
 
 function updateSizeOptions() {
@@ -72,7 +54,7 @@ function updateSizeOptions() {
       ...new Set(
         allPrices
           .filter((item) => item.shape === shape)
-          .map((item) => item.size)
+          .map((item) => formatSize(item.width, item.height))
       ),
     ];
     sizes.forEach((size) => {
@@ -102,8 +84,7 @@ function updateQuantityOptions() {
   if (shape && size) {
     const filteredPrices = allPrices.filter(
       (item) =>
-        item.shape === shape &&
-        item.size.replace(/['"]/g, "") === size.replace(/['"]/g, "")
+        item.shape === shape && formatSize(item.width, item.height) === size
     );
 
     filteredPrices.forEach((item) => {
@@ -131,7 +112,7 @@ function updatePriceDisplay() {
     const priceData = allPrices.find(
       (item) =>
         item.shape === shape &&
-        item.size.replace(/['"]/g, "") === size.replace(/['"]/g, "") &&
+        formatSize(item.width, item.height) === size &&
         item.quantity === quantity
     );
 
@@ -185,41 +166,42 @@ function handleSubmit(event) {
   }
 
   if (isValid) {
-    const shape = document.getElementById("shape").value;
-    const size = document.getElementById("size").value;
+    const shape = shapeSelect.value;
+    const size = sizeSelect.value;
     const quantity = parseInt(quantitySelect.value);
-    const imageFile = document.getElementById("image").files[0];
+    const imageFile = imageInput.files[0];
 
-    // Find the price for the selected options
-    const priceData = allPrices.find(
-      (item) => item.shape === shape && 
-                item.size.replace(/['"]/g, "") === size.replace(/['"]/g, "") && 
-                item.quantity === quantity
-    );
+    // Find the corresponding row in the price table
+    const tableRow = Array.from(document.querySelectorAll("#priceTable tbody tr")).find(row => {
+      const cells = row.querySelectorAll("td");
+      return cells[0].textContent.trim() === shape &&
+             cells[1].textContent.trim() === size &&
+             parseInt(cells[2].textContent.trim()) === quantity;
+    });
 
-    if (priceData) {
-      // Create a unique ID for the product
-      const productId = `${shape}-${size}-${quantity}`;
+    if (tableRow) {
+      const snipcartButton = tableRow.querySelector(".snipcart-add-item");
+      const itemId = snipcartButton.getAttribute("data-item-id");
+      const itemPrice = parseFloat(snipcartButton.getAttribute("data-item-price"));
 
       // Create a data URL from the uploaded image
       const reader = new FileReader();
-      reader.onload = function(e) {
+      reader.onload = function (e) {
         const imageDataUrl = e.target.result;
 
-        // Add the item to Snipcart
+        // Add the item to the Snipcart cart
         Snipcart.api.cart.items.add({
-          id: productId,
+          id: itemId,
           name: `Custom ${shape} Sticker`,
-          price: priceData.price,
-          quantity: 1,
-          url: window.location.href, // Required for Snipcart
+          price: itemPrice,
+          url: window.location.href,
           description: `${size} ${shape} sticker, quantity: ${quantity}`,
           image: imageDataUrl,
+          quantity: 1,
           customFields: [
             {
               name: "Shape",
-              value: shape,
-              options: ["Circle", "Square", "Oval", "Rectangle"]
+              value: shape
             },
             {
               name: "Size",
@@ -227,18 +209,14 @@ function handleSubmit(event) {
             },
             {
               name: "Quantity",
-              value: quantity
+              value: quantity.toString()
             }
           ]
-        }).then(() => {
-          console.log('Item added to cart');
-        }).catch((error) => {
-          console.error('Error adding item to cart:', error);
         });
       };
       reader.readAsDataURL(imageFile);
     } else {
-      console.error('Price data not found for the selected options');
+      console.error("Price data not found for the selected options");
     }
   }
 }
@@ -264,79 +242,6 @@ function displayError(element, message) {
   setTimeout(() => {
     errorDiv.style.animation = "none";
   }, 500);
-}
-
-function updatePriceTable() {
-  const shape = document.getElementById("shape").value;
-  const size = document.getElementById("size").value;
-  const quantity = document.getElementById("quantity").value;
-
-  let filteredPrices = allPrices;
-
-  if (shape) {
-    filteredPrices = filteredPrices.filter((item) => item.shape === shape);
-  }
-  if (size) {
-    filteredPrices = filteredPrices.filter(
-      (item) => item.size.replace(/['"]/g, "") === size.replace(/['"]/g, "")
-    );
-  }
-  if (quantity) {
-    filteredPrices = filteredPrices.filter(
-      (item) => item.quantity === parseInt(quantity)
-    );
-  }
-
-  displayPriceTable(filteredPrices);
-}
-
-function displayPriceTable(prices) {
-  console.log("Displaying price table");
-  const tableContainer = document.getElementById("priceTable");
-  tableContainer.innerHTML = ""; // Clear any existing content
-
-  const table = document.createElement("table");
-  table.className = "min-w-full divide-y divide-gray-200";
-
-  const thead = document.createElement("thead");
-  thead.className = "bg-gray-50";
-  thead.innerHTML = `
-        <tr>
-            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Shape</th>
-            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Size</th>
-            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Quantity</th>
-            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Price</th>
-        </tr>
-    `;
-  table.appendChild(thead);
-
-  const tbody = document.createElement("tbody");
-  tbody.className = "bg-white divide-y divide-gray-200";
-
-  prices.forEach((item, index) => {
-    const row = document.createElement("tr");
-    row.className = index % 2 === 0 ? "bg-white" : "bg-gray-50";
-    row.innerHTML = `
-            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">${
-              item.shape
-            }</td>
-            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">${
-              item.size
-            }</td>
-            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">${
-              item.quantity
-            }</td>
-            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">$${item.price.toFixed(
-              2
-            )}</td>
-        `;
-    tbody.appendChild(row);
-  });
-
-  table.appendChild(tbody);
-  tableContainer.appendChild(table);
-
-  console.log("Price table displayed");
 }
 
 function validateInput(event) {
@@ -367,22 +272,38 @@ function setupFormValidation() {
   });
 }
 
-document.addEventListener('snipcart.ready', function() {
-  console.log('Snipcart is ready');
-  
+document.addEventListener("snipcart.ready", function () {
+  console.log("Snipcart is ready");
+
   // Ensure Snipcart is fully loaded before accessing its API
   if (window.Snipcart) {
-    Snipcart.api.session.setLanguage('en');
-    
+    Snipcart.api.session.setLanguage("en");
+
     // Check if the settings property exists before trying to access it
     if (Snipcart.api.modal && Snipcart.api.modal.settings) {
-      Snipcart.api.modal.settings.set('shipping', {
-        enabled: true
+      Snipcart.api.modal.settings.set("shipping", {
+        enabled: true,
       });
     } else {
-      console.warn('Snipcart modal settings not available');
+      console.warn("Snipcart modal settings not available");
     }
   } else {
-    console.error('Snipcart not found');
+    console.error("Snipcart not found");
   }
 });
+
+function extractPriceDataFromTable() {
+  const tableRows = document.querySelectorAll("#priceTable tbody tr");
+  tableRows.forEach(row => {
+    const cells = row.querySelectorAll("td");
+    if (cells.length >= 4) {
+      const shape = cells[0].textContent.trim();
+      const size = cells[1].textContent.trim();
+      const quantity = parseInt(cells[2].textContent.trim());
+      const price = parseFloat(cells[3].textContent.replace("$", "").trim());
+      const [width, height] = size.split("x").map(s => parseFloat(s));
+      
+      allPrices.push({ shape, width, height, quantity, price });
+    }
+  });
+}
