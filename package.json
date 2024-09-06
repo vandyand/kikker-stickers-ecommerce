@@ -1,0 +1,29 @@
+{
+  "name": "kikkerstickers",
+  "version": "1.0.0",
+  "description": "kikker stickers ftw",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon --watch . --ext js,mjs,json,html,css server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kikker-stickers/kikker-stickers-ecommerce.git"
+  },
+  "author": "Andrew VD",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kikker-stickers/kikker-stickers-ecommerce/issues"
+  },
+  "homepage": "https://github.com/kikker-stickers/kikker-stickers-ecommerce#readme",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "cloudinary": "^2.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "nodemon": "^3.1.4"
+  }
+}

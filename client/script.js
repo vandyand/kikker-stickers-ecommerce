@@ -13,7 +13,9 @@ document.addEventListener("DOMContentLoaded", function () {
   // Add event listeners for shape, size, and quantity dropdowns
   document.getElementById("shape").addEventListener("change", updateForm);
   document.getElementById("size").addEventListener("change", updateForm);
-  document.getElementById("quantity").addEventListener("change", updatePriceDisplay);
+  document
+    .getElementById("quantity")
+    .addEventListener("change", updatePriceDisplay);
 
   // Add event listeners for real-time validation
   document.getElementById("image").addEventListener("change", validateInput);
@@ -23,8 +25,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Change the "Checkout" button to "Add to Cart"
   const checkoutButton = document.querySelector('button[type="submit"]');
-  checkoutButton.textContent = "Add to Cart";
   checkoutButton.id = "addToCart";
+  checkoutButton.addEventListener("click", captureAndUploadSticker);
+
+  // // Add event listener for the upload sticker button
+  // const uploadStickerButton = document.getElementById("uploadSticker");
+
+  // if (uploadStickerButton) {
+  //   console.log("Upload sticker button found");
+  //   uploadStickerButton.addEventListener("click", captureAndUploadSticker);
+  // } else {
+  //   console.error("Upload sticker button not found");
+  // }
 });
 
 function formatSize(width, height) {
@@ -172,17 +184,23 @@ function handleSubmit(event) {
     const imageFile = imageInput.files[0];
 
     // Find the corresponding row in the price table
-    const tableRow = Array.from(document.querySelectorAll("#priceTable tbody tr")).find(row => {
+    const tableRow = Array.from(
+      document.querySelectorAll("#priceTable tbody tr")
+    ).find((row) => {
       const cells = row.querySelectorAll("td");
-      return cells[0].textContent.trim() === shape &&
-             cells[1].textContent.trim() === size &&
-             parseInt(cells[2].textContent.trim()) === quantity;
+      return (
+        cells[0].textContent.trim() === shape &&
+        cells[1].textContent.trim() === size &&
+        parseInt(cells[2].textContent.trim()) === quantity
+      );
     });
 
     if (tableRow) {
       const snipcartButton = tableRow.querySelector(".snipcart-add-item");
       const itemId = snipcartButton.getAttribute("data-item-id");
-      const itemPrice = parseFloat(snipcartButton.getAttribute("data-item-price"));
+      const itemPrice = parseFloat(
+        snipcartButton.getAttribute("data-item-price")
+      );
 
       // Create a data URL from the uploaded image
       const reader = new FileReader();
@@ -201,17 +219,17 @@ function handleSubmit(event) {
           customFields: [
             {
               name: "Shape",
-              value: shape
+              value: shape,
             },
             {
               name: "Size",
-              value: size
+              value: size,
             },
             {
               name: "Quantity",
-              value: quantity.toString()
-            }
-          ]
+              value: quantity.toString(),
+            },
+          ],
         });
       };
       reader.readAsDataURL(imageFile);
@@ -294,16 +312,62 @@ document.addEventListener("snipcart.ready", function () {
 
 function extractPriceDataFromTable() {
   const tableRows = document.querySelectorAll("#priceTable tbody tr");
-  tableRows.forEach(row => {
+  tableRows.forEach((row) => {
     const cells = row.querySelectorAll("td");
     if (cells.length >= 4) {
       const shape = cells[0].textContent.trim();
       const size = cells[1].textContent.trim();
       const quantity = parseInt(cells[2].textContent.trim());
       const price = parseFloat(cells[3].textContent.replace("$", "").trim());
-      const [width, height] = size.split("x").map(s => parseFloat(s));
-      
+      const [width, height] = size.split("x").map((s) => parseFloat(s));
+
       allPrices.push({ shape, width, height, quantity, price });
     }
   });
+}
+
+function captureAndUploadSticker() {
+  console.log("Capturing and uploading sticker");
+
+  const stickerDisplay = document.getElementById("stickerDisplay");
+
+  if (!stickerDisplay) {
+    console.error("Sticker display element not found");
+    return;
+  }
+
+  // Add a small delay to ensure all resources are loaded
+  setTimeout(() => {
+    htmlToImage
+      .toPng(stickerDisplay, {
+        backgroundColor: null,
+        pixelRatio: 2,
+        allowTaint: true,
+        useCORS: true,
+        skipFonts: true, // Add this line
+        fontEmbedCSS: "", // Add this line
+        imagePlaceholder:
+          "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7", // Add this line
+      })
+      .then(function (dataUrl) {
+        // Upload the image
+        fetch("/upload-sticker", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ imageBase64: dataUrl }),
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            console.log("Image uploaded successfully:", data);
+          })
+          .catch((error) => {
+            console.error("Error uploading image:", error);
+          });
+      })
+      .catch(function (error) {
+        console.error("Error capturing sticker:", error);
+      });
+  }, 1000); // Increased delay to 1000ms
 }
