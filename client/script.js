@@ -155,11 +155,14 @@ function hideSpinner() {
 function handleSubmit(event) {
   event.preventDefault();
 
+  console.log("Form submission started");
+
   document.querySelectorAll(".error-message").forEach((el) => el.remove());
 
   let isValid = true;
 
   const imageInput = document.getElementById("image");
+  console.log("Image input files:", imageInput.files);
   if (!imageInput.files || imageInput.files.length === 0) {
     displayError(imageInput.parentNode, "Please upload an image");
     isValid = false;
@@ -182,6 +185,8 @@ function handleSubmit(event) {
     displayError(quantitySelect, "Please select a quantity");
     isValid = false;
   }
+
+  console.log("Form validation result:", isValid);
 
   if (isValid) {
     const shape = shapeSelect.value;
@@ -243,7 +248,9 @@ function handleSubmit(event) {
 }
 
 function displayError(element, message) {
-  const existingError = element.parentNode.querySelector(".error-message");
+  console.log("Displaying error for element:", element, "Message:", message);
+  const container = element.closest('.file-input-wrapper, .mb-4');
+  const existingError = container.querySelector(".error-message");
   if (existingError) {
     existingError.remove();
   }
@@ -251,7 +258,9 @@ function displayError(element, message) {
   const errorDiv = document.createElement("div");
   errorDiv.className = "error-message text-red-500 text-sm mt-1";
   errorDiv.textContent = message;
-  element.parentNode.appendChild(errorDiv);
+  
+  // Insert the error message after the element
+  container.appendChild(errorDiv);
 
   errorDiv.style.animation = "none";
   errorDiv.offsetHeight;
@@ -263,8 +272,9 @@ function displayError(element, message) {
 }
 
 function validateInput(event) {
+  console.log("Validating input:", event.target);
   const input = event.target;
-  const errorMessage = input.parentNode.querySelector(".error-message");
+  const errorMessage = input.closest('.file-input-wrapper, .mb-4').querySelector(".error-message");
 
   if (errorMessage) {
     if (
@@ -274,18 +284,27 @@ function validateInput(event) {
         input.type !== "select-one" &&
         input.value.trim())
     ) {
+      console.log("Removing error message for:", input);
       errorMessage.remove();
     }
   }
 }
 
 function setupFormValidation() {
+  console.log("Setting up form validation");
   const formInputs = document.querySelectorAll(
     "#orderForm input, #orderForm select"
   );
   formInputs.forEach((input) => {
     input.addEventListener("change", validateInput);
     input.addEventListener("input", validateInput);
+  });
+
+  // Add specific handler for file input
+  const fileInput = document.getElementById("image");
+  fileInput.addEventListener("change", function(event) {
+    console.log("File input changed:", event.target.files);
+    validateInput(event);
   });
 }
 
@@ -332,12 +351,10 @@ function captureAndUploadSticker() {
   const stickerDisplay = document.getElementById('stickerDisplay');
 
   if (!stickerDisplay) {
-    console.error("Sticker display element not found");
     return Promise.reject("Sticker display element not found");
   }
 
   return new Promise((resolve, reject) => {
-    // Capture the sticker display as-is
     htmlToImage.toPng(stickerDisplay, {
       backgroundColor: null,
       pixelRatio: 2,
@@ -348,7 +365,6 @@ function captureAndUploadSticker() {
       imagePlaceholder: "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
     })
     .then(function (dataUrl) {
-      // Continue with upload process
       fetch("/upload-sticker", {
         method: "POST",
         headers: {
@@ -365,7 +381,6 @@ function captureAndUploadSticker() {
         });
     })
     .catch(function (error) {
-      console.error("Error capturing sticker:", error);
       reject(error);
     });
   });
