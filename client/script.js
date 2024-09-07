@@ -329,7 +329,7 @@ function extractPriceDataFromTable() {
 }
 
 function captureAndUploadSticker() {
-  const stickerDisplay = document.getElementById("stickerDisplay");
+  const stickerDisplay = document.getElementById('stickerDisplay');
 
   if (!stickerDisplay) {
     console.error("Sticker display element not found");
@@ -337,37 +337,36 @@ function captureAndUploadSticker() {
   }
 
   return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      htmlToImage
-        .toPng(stickerDisplay, {
-          backgroundColor: null,
-          pixelRatio: 2,
-          allowTaint: true,
-          useCORS: true,
-          skipFonts: true,
-          fontEmbedCSS: "",
-          imagePlaceholder:
-            "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+    // Capture the sticker display as-is
+    htmlToImage.toPng(stickerDisplay, {
+      backgroundColor: null,
+      pixelRatio: 2,
+      allowTaint: true,
+      useCORS: true,
+      skipFonts: true,
+      fontEmbedCSS: "",
+      imagePlaceholder: "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+    })
+    .then(function (dataUrl) {
+      // Continue with upload process
+      fetch("/upload-sticker", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ imageBase64: dataUrl }),
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          resolve(data.imageUrl);
         })
-        .then(function (dataUrl) {
-          fetch("/upload-sticker", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify({ imageBase64: dataUrl }),
-          })
-            .then((response) => response.json())
-            .then((data) => {
-              resolve(data.imageUrl);
-            })
-            .catch((error) => {
-              reject(error);
-            });
-        })
-        .catch(function (error) {
+        .catch((error) => {
           reject(error);
         });
-    }, 1000);
+    })
+    .catch(function (error) {
+      console.error("Error capturing sticker:", error);
+      reject(error);
+    });
   });
 }

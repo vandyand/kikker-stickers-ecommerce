@@ -39,17 +39,27 @@ function generatePriceTable(prices) {
       const rowClass = index % 2 === 0 ? "bg-white" : "bg-gray-50";
       tableHtml += `
         <tr class="${rowClass}">
-          <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">${item.shape}</td>
-          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">${item.width}" x ${item.height}"</td>
-          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">${item.quantity}</td>
-          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">$${item.price.toFixed(2)}</td>
+          <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">${
+            item.shape
+          }</td>
+          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">${
+            item.width
+          }" x ${item.height}"</td>
+          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">${
+            item.quantity
+          }</td>
+          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">$${item.price.toFixed(
+            2
+          )}</td>
           <td style="display: none">
             <div class="snipcart-item">
               <button class="snipcart-add-item"
                 data-item-id="${item.id}"
                 data-item-price="${item.price.toFixed(2)}"
                 data-item-url="https://kikker-stickers.github.io/kikker-stickers-ecommerce"
-                data-item-description="${item.width} x ${item.height} ${item.shape} sticker, quantity: ${item.quantity}"
+                data-item-description="${item.width} x ${item.height} ${
+        item.shape
+      } sticker, quantity: ${item.quantity}"
                 data-item-image="placeholder.png"
                 data-item-name="Custom ${item.shape} Sticker"
                 data-item-custom1-name="Shape"
@@ -102,7 +112,8 @@ app.get("/", (req, res) => {
 
       const priceTable = generatePriceTable(prices);
 
-      const oldTableRegex = /<div id="priceTable" class="overflow-x-auto">[\s\S]*?<\/div>/;
+      const oldTableRegex =
+        /<div id="priceTable" class="overflow-x-auto">[\s\S]*?<\/div>/;
       const oldTableMatch = html.match(oldTableRegex);
 
       if (!oldTableMatch) {
