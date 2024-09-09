@@ -21,45 +21,35 @@ function generatePriceTable(prices) {
   }
 
   let tableHtml = `
-    <table class="min-w-full divide-y divide-gray-200">
-      <thead class="bg-gray-50">
+    <table class="price-table">
+      <thead>
         <tr>
-          <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Shape</th>
-          <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Size</th>
-          <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Quantity</th>
-          <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Price</th>
+          <th>Shape</th>
+          <th>Size</th>
+          <th>Quantity</th>
+          <th>Price</th>
           <th style="display: none">Snipcart Data</th>
         </tr>
       </thead>
-      <tbody class="bg-white divide-y divide-gray-200">
+      <tbody>
   `;
 
   prices.forEach((item, index) => {
     try {
-      const rowClass = index % 2 === 0 ? "bg-white" : "bg-gray-50";
+      const rowClass = index % 2 === 0 ? "row-even" : "row-odd";
       tableHtml += `
         <tr class="${rowClass}">
-          <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">${
-            item.shape
-          }</td>
-          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">${
-            item.width
-          }" x ${item.height}"</td>
-          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">${
-            item.quantity
-          }</td>
-          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">$${item.price.toFixed(
-            2
-          )}</td>
+          <td>${item.shape}</td>
+          <td>${item.width}" x ${item.height}"</td>
+          <td>${item.quantity}</td>
+          <td>$${item.price.toFixed(2)}</td>
           <td style="display: none">
             <div class="snipcart-item">
               <button class="snipcart-add-item"
                 data-item-id="${item.id}"
                 data-item-price="${item.price.toFixed(2)}"
                 data-item-url="https://kikker-stickers.github.io/kikker-stickers-ecommerce"
-                data-item-description="${item.width} x ${item.height} ${
-        item.shape
-      } sticker, quantity: ${item.quantity}"
+                data-item-description="${item.width} x ${item.height} ${item.shape} sticker, quantity: ${item.quantity}"
                 data-item-image="placeholder.png"
                 data-item-name="Custom ${item.shape} Sticker"
                 data-item-custom1-name="Shape"
@@ -112,8 +102,7 @@ app.get("/", (req, res) => {
 
       const priceTable = generatePriceTable(prices);
 
-      const oldTableRegex =
-        /<div id="priceTable" class="overflow-x-auto">[\s\S]*?<\/div>/;
+      const oldTableRegex = /<div id="priceTable">[\s\S]*?<\/div>/;
       const oldTableMatch = html.match(oldTableRegex);
 
       if (!oldTableMatch) {
@@ -122,7 +111,7 @@ app.get("/", (req, res) => {
 
       const updatedHtml = html.replace(
         oldTableRegex,
-        `<div id="priceTable" class="overflow-x-auto">${priceTable}</div>`
+        `<div id="priceTable">${priceTable}</div>`
       );
 
       if (updatedHtml.length === html.length) {
