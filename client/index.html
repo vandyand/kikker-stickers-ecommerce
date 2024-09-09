@@ -10,6 +10,11 @@
       href="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Add this line to import Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
     <style>
       @keyframes shake {
         0%,
@@ -41,13 +46,6 @@
     </div>
     <header class="bg-blue-500 text-white text-center py-4">
       <h1 class="text-3xl font-bold">Welcome to Kikker Sticker</h1>
-      <div id="cart-summary" class="mt-2">
-        <a href="#" class="snipcart-checkout text-white hover:text-gray-200">
-          <i class="fas fa-shopping-cart"></i>
-          <span class="snipcart-total-items"></span> items -
-          <span class="snipcart-total-price"></span>
-        </a>
-      </div>
     </header>
 
     <main class="container mx-auto px-4 py-8">
@@ -81,12 +79,12 @@
               </div>
             </div>
 
-            <div id="shapeGroup">
+            <div id="shapeGroup" class="relative">
               <label for="shape" class="block font-medium mb-1">Shape</label>
               <select
                 id="shape"
                 name="shape"
-                class="w-full border border-gray-300 rounded px-3 py-2"
+                class="w-full border border-gray-300 rounded px-3 py-2 appearance-none bg-white pr-8"
               >
                 <option value="">Select a shape</option>
                 <option value="Circle">Circle</option>
@@ -94,43 +92,72 @@
                 <option value="Oval">Oval</option>
                 <option value="Rectangle">Rectangle</option>
               </select>
+              <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700" style="top: 24px;">
+                <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                  <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/>
+                </svg>
+              </div>
             </div>
 
-            <div id="sizeGroup">
+            <div id="sizeGroup" class="relative">
               <label for="size" class="block font-medium mb-1">Size</label>
               <select
                 id="size"
                 name="size"
-                class="w-full border border-gray-300 rounded px-3 py-2"
+                class="w-full border border-gray-300 rounded px-3 py-2 appearance-none bg-white pr-8 disabled:bg-gray-100 disabled:text-gray-400 disabled:cursor-not-allowed"
               >
                 <option value="">Select a size</option>
                 <!-- Options will be dynamically populated -->
               </select>
+              <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700" style="top: 24px;">
+                <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                  <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/>
+                </svg>
+              </div>
+              <p id="sizeHelpText" class="text-sm text-gray-500 mt-1 hidden">Please select a shape first</p>
             </div>
 
-            <div id="quantityGroup">
-              <label for="quantity" class="block font-medium mb-1"
-                >Quantity</label
-              >
+            <div id="quantityGroup" class="relative">
+              <label for="quantity" class="block font-medium mb-1">Quantity</label>
               <select
                 id="quantity"
                 name="quantity"
-                class="w-full border border-gray-300 rounded px-3 py-2"
+                class="w-full border border-gray-300 rounded px-3 py-2 appearance-none bg-white pr-8"
               >
                 <option value="">Select a quantity</option>
                 <!-- Options will be dynamically populated -->
               </select>
+              <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700" style="top: 24px;">
+                <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                  <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/>
+                </svg>
+              </div>
             </div>
 
             <div id="priceDisplay" class="text-xl font-bold"></div>
 
-            <button
-              id="addToCart"
-              type="submit"
-              class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600"
-            >
-              Add to cart
-            </button>
+            <div class="flex items-center justify-between gap-8">
+              <button
+                id="addToCart"
+                type="submit"
+                class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600"
+              >
+                Add to cart
+              </button>
+              <div
+                id="cart-summary"
+                class="bg-gray-200 py-2 px-4 rounded hover:bg-gray-300 cursor-pointer"
+              >
+                <a class="snipcart-checkout">
+                  <i id="cart-icon" class="fas fa-shopping-cart"></i>
+                  <span id="cart-items" class="snipcart-items-count">0</span>
+                  items -
+                  <span id="cart-total" class="snipcart-total-price"
+                    >$0.00</span
+                  >
+                </a>
+              </div>
+            </div>
           </form>
         </section>
 
@@ -210,6 +237,24 @@
           : "No file chosen";
         document.getElementById("file-input-name").textContent = fileName;
       });
+
+      // Update this script to handle clicks on both the div and the anchor tag
+      document
+        .getElementById("cart-summary")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          e.stopPropagation();
+          Snipcart.api.theme.cart.open();
+        });
+
+      // Add this event listener to prevent default action on the anchor tag
+      document
+        .querySelector("#cart-summary a")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          e.stopPropagation();
+          Snipcart.api.theme.cart.open();
+        });
     </script>
     <script
       async

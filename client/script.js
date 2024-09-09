@@ -3,10 +3,13 @@ let allPrices = [];
 document.addEventListener("DOMContentLoaded", function () {
   setupFormValidation();
   extractPriceDataFromTable();
+  updateForm();
   document.getElementById("orderForm").addEventListener("submit", handleSubmit);
   document.getElementById("shape").addEventListener("change", updateForm);
   document.getElementById("size").addEventListener("change", updateForm);
-  document.getElementById("quantity").addEventListener("change", updatePriceDisplay);
+  document
+    .getElementById("quantity")
+    .addEventListener("change", updatePriceDisplay);
   document.getElementById("image").addEventListener("change", validateInput);
   document.getElementById("shape").addEventListener("change", validateInput);
   document.getElementById("size").addEventListener("change", validateInput);
@@ -53,15 +56,16 @@ function updateForm() {
 function updateSizeOptions() {
   const shape = document.getElementById("shape").value;
   const sizeSelect = document.getElementById("size");
+  const sizeHelpText = document.getElementById("sizeHelpText");
   const currentSize = sizeSelect.value;
-  const quantitySelect = document.getElementById("quantity");
 
   const defaultOption = '<option value="">Select a size</option>';
   sizeSelect.innerHTML = defaultOption;
-  quantitySelect.innerHTML = '<option value="">Select a quantity</option>';
   document.getElementById("priceDisplay").textContent = "";
 
   if (shape) {
+    sizeSelect.disabled = false;
+    sizeHelpText.classList.add("hidden");
     const sizes = [
       ...new Set(
         allPrices
@@ -79,36 +83,38 @@ function updateSizeOptions() {
     if (sizes.includes(currentSize)) {
       sizeSelect.value = currentSize;
     }
+  } else {
+    sizeSelect.disabled = true;
+    sizeHelpText.classList.remove("hidden");
   }
+
+  updateQuantityOptions();
 }
 
 function updateQuantityOptions() {
-  const shape = document.getElementById("shape").value;
-  const size = document.getElementById("size").value;
   const quantitySelect = document.getElementById("quantity");
   const currentQuantity = quantitySelect.value;
 
+  // Clear current options
   quantitySelect.innerHTML = '<option value="">Select a quantity</option>';
-  document.getElementById("priceDisplay").textContent = "";
 
-  if (shape && size) {
-    const filteredPrices = allPrices.filter(
-      (item) =>
-        item.shape === shape && formatSize(item.width, item.height) === size
-    );
+  // Get all unique quantities from allPrices
+  const uniqueQuantities = [...new Set(allPrices.map((item) => item.quantity))];
 
-    filteredPrices.forEach((item) => {
-      const option = document.createElement("option");
-      option.value = item.quantity;
-      option.textContent = item.quantity;
-      quantitySelect.appendChild(option);
-    });
+  // Sort quantities in ascending order
+  uniqueQuantities.sort((a, b) => a - b);
 
-    if (
-      filteredPrices.some((item) => item.quantity === parseInt(currentQuantity))
-    ) {
-      quantitySelect.value = currentQuantity;
-    }
+  // Add quantity options
+  uniqueQuantities.forEach((quantity) => {
+    const option = document.createElement("option");
+    option.value = quantity;
+    option.textContent = quantity;
+    quantitySelect.appendChild(option);
+  });
+
+  // Restore previously selected quantity if it exists in the new options
+  if (uniqueQuantities.includes(parseInt(currentQuantity))) {
+    quantitySelect.value = currentQuantity;
   }
 }
 
@@ -249,7 +255,8 @@ function handleSubmit(event) {
 
 function displayError(element, message) {
   console.log("Displaying error for element:", element, "Message:", message);
-  const container = element.closest('div[id$="Group"]') || element.parentElement;
+  const container =
+    element.closest('div[id$="Group"]') || element.parentElement;
   if (!container) {
     console.error("Error container not found for element:", element);
     return;
@@ -262,16 +269,16 @@ function displayError(element, message) {
   const errorDiv = document.createElement("div");
   errorDiv.className = "error-message text-red-500 text-sm mt-1";
   errorDiv.textContent = message;
-  
+
   // Insert the error message after the element
   container.appendChild(errorDiv);
 
   // Apply the shake animation
-  errorDiv.classList.add('shake');
+  errorDiv.classList.add("shake");
 
   // Remove the shake class after the animation completes
   setTimeout(() => {
-    errorDiv.classList.remove('shake');
+    errorDiv.classList.remove("shake");
   }, 500);
 }
 
@@ -294,8 +301,8 @@ function validateInput(event) {
         input.value.trim())
     ) {
       console.log("Removing error message for:", input);
-      errorMessage.style.opacity = '0';
-      errorMessage.style.transition = 'opacity 0.3s ease-out';
+      errorMessage.style.opacity = "0";
+      errorMessage.style.transition = "opacity 0.3s ease-out";
       setTimeout(() => {
         errorMessage.remove();
       }, 300);
@@ -315,10 +322,14 @@ function setupFormValidation() {
 
   // Add specific handler for file input
   const fileInput = document.getElementById("image");
-  fileInput.addEventListener("change", function(event) {
-    console.log("File input changed:", event.target.files);
-    validateInput(event);
-  }, { passive: true });
+  fileInput.addEventListener(
+    "change",
+    function (event) {
+      console.log("File input changed:", event.target.files);
+      validateInput(event);
+    },
+    { passive: true }
+  );
 }
 
 function updateCartSummary() {
@@ -361,40 +372,42 @@ function extractPriceDataFromTable() {
 }
 
 function captureAndUploadSticker() {
-  const stickerDisplay = document.getElementById('stickerDisplay');
+  const stickerDisplay = document.getElementById("stickerDisplay");
 
   if (!stickerDisplay) {
     return Promise.reject("Sticker display element not found");
   }
 
   return new Promise((resolve, reject) => {
-    htmlToImage.toPng(stickerDisplay, {
-      backgroundColor: null,
-      pixelRatio: 2,
-      allowTaint: true,
-      useCORS: true,
-      skipFonts: true,
-      fontEmbedCSS: "",
-      imagePlaceholder: "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
-    })
-    .then(function (dataUrl) {
-      fetch("/upload-sticker", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ imageBase64: dataUrl }),
+    htmlToImage
+      .toPng(stickerDisplay, {
+        backgroundColor: null,
+        pixelRatio: 2,
+        allowTaint: true,
+        useCORS: true,
+        skipFonts: true,
+        fontEmbedCSS: "",
+        imagePlaceholder:
+          "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
       })
-        .then((response) => response.json())
-        .then((data) => {
-          resolve(data.imageUrl);
+      .then(function (dataUrl) {
+        fetch("/upload-sticker", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ imageBase64: dataUrl }),
         })
-        .catch((error) => {
-          reject(error);
-        });
-    })
-    .catch(function (error) {
-      reject(error);
-    });
+          .then((response) => response.json())
+          .then((data) => {
+            resolve(data.imageUrl);
+          })
+          .catch((error) => {
+            reject(error);
+          });
+      })
+      .catch(function (error) {
+        reject(error);
+      });
   });
 }
