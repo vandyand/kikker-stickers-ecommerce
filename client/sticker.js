@@ -175,3 +175,29 @@ function handleResize() {
 document.addEventListener("DOMContentLoaded", () => {
   initStickerDisplay();
 });
+
+// Update the touch event listeners to use IDs
+document.addEventListener("DOMContentLoaded", function () {
+  const priceTable = document.getElementById("priceTable");
+  let isScrolling = false;
+  let startX;
+  let scrollLeft;
+
+  priceTable.addEventListener("touchstart", function (e) {
+    isScrolling = true;
+    startX = e.touches[0].pageX - priceTable.offsetLeft;
+    scrollLeft = priceTable.scrollLeft;
+  }, { passive: true });
+
+  priceTable.addEventListener("touchmove", function (e) {
+    if (!isScrolling) return;
+    e.preventDefault();
+    const x = e.touches[0].pageX - priceTable.offsetLeft;
+    const walk = (x - startX) * 2;
+    priceTable.scrollLeft = scrollLeft - walk;
+  }, { passive: false });
+
+  priceTable.addEventListener("touchend", function () {
+    isScrolling = false;
+  }, { passive: true });
+});

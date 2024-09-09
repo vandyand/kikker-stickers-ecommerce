@@ -9,40 +9,85 @@
       rel="stylesheet"
       href="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.css"
     />
-    <link rel="stylesheet" href="/styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @keyframes shake {
+        0%,
+        100% {
+          transform: translateX(0);
+        }
+        20%,
+        60% {
+          transform: translateX(-5px);
+        }
+        40%,
+        80% {
+          transform: translateX(5px);
+        }
+      }
+      .shake {
+        animation: shake 0.5s ease-in-out;
+      }
+    </style>
   </head>
-  <body>
-    <div id="processing-spinner">
-      <div id="spinner"></div>
+  <body class="bg-gray-100 text-gray-800 font-sans">
+    <div
+      id="processing-spinner"
+      class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 hidden"
+    >
+      <div
+        class="w-12 h-12 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"
+      ></div>
     </div>
-    <header id="main-header">
-      <h1 id="main-title">Welcome to Kikker Sticker</h1>
-      <div id="cart-summary" class="snipcart-summary">
-        <a id="checkout-link" href="#" class="snipcart-checkout">
-          <i id="cart-icon" class="fas fa-shopping-cart"></i>
-          <span id="cart-items" class="snipcart-total-items"></span> items -
-          <span id="cart-total" class="snipcart-total-price"></span>
+    <header class="bg-blue-500 text-white text-center py-4">
+      <h1 class="text-3xl font-bold">Welcome to Kikker Sticker</h1>
+      <div id="cart-summary" class="mt-2">
+        <a href="#" class="snipcart-checkout text-white hover:text-gray-200">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="snipcart-total-items"></span> items -
+          <span class="snipcart-total-price"></span>
         </a>
       </div>
     </header>
 
-    <main id="main-content">
-      <div id="sticker-container" class="sticker-container">
-        <section id="order-section" class="sticker-section">
-          <h2 id="order-title">Order Your Custom Sticker</h2>
-          <form id="orderForm">
-            <div id="image-upload" class="form-group">
-              <label for="image">Upload Image</label>
-              <div id="file-input-wrapper" class="file-input-wrapper">
-                <label id="file-input-label" for="image" class="file-input-button">Choose File</label>
-                <span id="file-input-name" class="file-input-name" aria-live="polite"></span>
-                <input type="file" id="image" name="image" accept="image/*" class="hidden" />
+    <main class="container mx-auto px-4 py-8">
+      <div class="flex flex-col md:flex-row gap-8">
+        <section class="bg-white rounded-lg shadow-md p-6 flex-1">
+          <h2 class="text-2xl font-semibold mb-4">Order Your Custom Sticker</h2>
+          <form id="orderForm" class="space-y-4">
+            <div id="imageUploadGroup">
+              <label for="image" class="block font-medium mb-1"
+                >Upload Image</label
+              >
+              <div class="relative">
+                <label
+                  for="image"
+                  class="cursor-pointer bg-gray-200 hover:bg-gray-300 py-2 px-4 rounded inline-block"
+                >
+                  Choose File
+                </label>
+                <span
+                  id="file-input-name"
+                  class="ml-3"
+                  aria-live="polite"
+                ></span>
+                <input
+                  type="file"
+                  id="image"
+                  name="image"
+                  accept="image/*"
+                  class="hidden"
+                />
               </div>
             </div>
 
-            <div id="shape-select" class="form-group">
-              <label for="shape">Shape</label>
-              <select id="shape" name="shape">
+            <div id="shapeGroup">
+              <label for="shape" class="block font-medium mb-1">Shape</label>
+              <select
+                id="shape"
+                name="shape"
+                class="w-full border border-gray-300 rounded px-3 py-2"
+              >
                 <option value="">Select a shape</option>
                 <option value="Circle">Circle</option>
                 <option value="Square">Square</option>
@@ -51,56 +96,110 @@
               </select>
             </div>
 
-            <div id="size-select" class="form-group">
-              <label for="size">Size</label>
-              <select id="size" name="size">
+            <div id="sizeGroup">
+              <label for="size" class="block font-medium mb-1">Size</label>
+              <select
+                id="size"
+                name="size"
+                class="w-full border border-gray-300 rounded px-3 py-2"
+              >
                 <option value="">Select a size</option>
                 <!-- Options will be dynamically populated -->
               </select>
             </div>
 
-            <div id="quantity-select" class="form-group">
-              <label for="quantity">Quantity</label>
-              <select id="quantity" name="quantity">
+            <div id="quantityGroup">
+              <label for="quantity" class="block font-medium mb-1"
+                >Quantity</label
+              >
+              <select
+                id="quantity"
+                name="quantity"
+                class="w-full border border-gray-300 rounded px-3 py-2"
+              >
                 <option value="">Select a quantity</option>
                 <!-- Options will be dynamically populated -->
               </select>
             </div>
 
-            <div id="priceDisplay"></div>
+            <div id="priceDisplay" class="text-xl font-bold"></div>
 
-            <button id="uploadSticker" type="submit">Add to cart</button>
+            <button
+              id="addToCart"
+              type="submit"
+              class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600"
+            >
+              Add to cart
+            </button>
           </form>
         </section>
 
-        <section id="preview-section" class="sticker-section">
-          <h2 id="preview-title">Sticker Preview</h2>
-          <div id="stickerDisplay">
-            <img id="uploadedImage" src="/placeholder.png" alt="Uploaded image" />
+        <section class="bg-white rounded-lg shadow-md p-6 flex-1">
+          <h2 class="text-2xl font-semibold mb-4">Sticker Preview</h2>
+          <div
+            id="stickerDisplay"
+            class="w-full max-w-sm mx-auto aspect-square relative overflow-hidden mb-4"
+          >
+            <img
+              id="uploadedImage"
+              src="/placeholder.png"
+              alt="Uploaded image"
+              class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 max-w-[150%] max-h-[150%] object-cover"
+            />
           </div>
-          <div id="move-controls" class="control-buttons">
-            <button id="moveLeft">←</button>
-            <button id="moveUp">↑</button>
-            <button id="moveDown">↓</button>
-            <button id="moveRight">→</button>
+          <div class="flex justify-center space-x-2 mb-4">
+            <button
+              id="moveLeft"
+              class="bg-gray-200 hover:bg-gray-300 py-2 px-4 rounded"
+            >
+              ←
+            </button>
+            <button
+              id="moveUp"
+              class="bg-gray-200 hover:bg-gray-300 py-2 px-4 rounded"
+            >
+              ↑
+            </button>
+            <button
+              id="moveDown"
+              class="bg-gray-200 hover:bg-gray-300 py-2 px-4 rounded"
+            >
+              ↓
+            </button>
+            <button
+              id="moveRight"
+              class="bg-gray-200 hover:bg-gray-300 py-2 px-4 rounded"
+            >
+              →
+            </button>
           </div>
-          <div id="zoom-controls" class="control-buttons">
-            <button id="zoomOut">-</button>
-            <button id="zoomIn">+</button>
+          <div class="flex justify-center space-x-2">
+            <button
+              id="zoomOut"
+              class="bg-gray-200 hover:bg-gray-300 py-2 px-4 rounded"
+            >
+              -
+            </button>
+            <button
+              id="zoomIn"
+              class="bg-gray-200 hover:bg-gray-300 py-2 px-4 rounded"
+            >
+              +
+            </button>
           </div>
         </section>
       </div>
 
-      <section id="price-list" class="price-table-container">
-        <h2 id="price-list-title">Price List</h2>
-        <div id="priceTable">
+      <section class="bg-white rounded-lg shadow-md p-6 mt-8">
+        <h2 class="text-2xl font-semibold mb-4">Price List</h2>
+        <div id="priceTable" class="overflow-x-auto">
           <!-- The price table will be dynamically generated and inserted here by the server -->
         </div>
       </section>
     </main>
 
-    <footer id="main-footer">
-      <p id="copyright">&copy; 2024 Kikker Stickers. All rights reserved.</p>
+    <footer class="bg-gray-800 text-white text-center py-4 mt-8">
+      <p>&copy; 2024 Kikker Stickers. All rights reserved.</p>
     </footer>
     <script src="/script.js"></script>
     <script src="/sticker.js"></script>
@@ -122,32 +221,5 @@
       data-api-key="YTdlNzRkM2MtMmFjOS00NzUzLWExYjItNTVkMTQ2N2U5N2M4NjM4NTk3Njc5MTc5NDY3OTQ3"
     ></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html-to-image/1.11.11/html-to-image.min.js"></script>
-    <script>
-      // Add this script to handle touch scrolling for the price table
-      document.addEventListener("DOMContentLoaded", function () {
-        const priceTable = document.getElementById("priceTable");
-        let isScrolling = false;
-        let startX;
-        let scrollLeft;
-
-        priceTable.addEventListener("touchstart", function (e) {
-          isScrolling = true;
-          startX = e.touches[0].pageX - priceTable.offsetLeft;
-          scrollLeft = priceTable.scrollLeft;
-        });
-
-        priceTable.addEventListener("touchmove", function (e) {
-          if (!isScrolling) return;
-          e.preventDefault();
-          const x = e.touches[0].pageX - priceTable.offsetLeft;
-          const walk = (x - startX) * 2;
-          priceTable.scrollLeft = scrollLeft - walk;
-        });
-
-        priceTable.addEventListener("touchend", function () {
-          isScrolling = false;
-        });
-      });
-    </script>
   </body>
 </html>

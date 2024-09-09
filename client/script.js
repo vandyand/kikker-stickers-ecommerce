@@ -164,7 +164,7 @@ function handleSubmit(event) {
   const imageInput = document.getElementById("image");
   console.log("Image input files:", imageInput.files);
   if (!imageInput.files || imageInput.files.length === 0) {
-    displayError(imageInput.parentNode, "Please upload an image");
+    displayError(imageInput, "Please upload an image");
     isValid = false;
   }
 
@@ -249,7 +249,11 @@ function handleSubmit(event) {
 
 function displayError(element, message) {
   console.log("Displaying error for element:", element, "Message:", message);
-  const container = element.closest('.file-input-wrapper, .mb-4');
+  const container = element.closest('div[id$="Group"]') || element.parentElement;
+  if (!container) {
+    console.error("Error container not found for element:", element);
+    return;
+  }
   const existingError = container.querySelector(".error-message");
   if (existingError) {
     existingError.remove();
@@ -262,19 +266,24 @@ function displayError(element, message) {
   // Insert the error message after the element
   container.appendChild(errorDiv);
 
-  errorDiv.style.animation = "none";
-  errorDiv.offsetHeight;
-  errorDiv.style.animation = null;
+  // Apply the shake animation
+  errorDiv.classList.add('shake');
 
+  // Remove the shake class after the animation completes
   setTimeout(() => {
-    errorDiv.style.animation = "none";
+    errorDiv.classList.remove('shake');
   }, 500);
 }
 
 function validateInput(event) {
   console.log("Validating input:", event.target);
   const input = event.target;
-  const errorMessage = input.closest('.file-input-wrapper, .mb-4').querySelector(".error-message");
+  const container = input.closest('div[id$="Group"]') || input.parentElement;
+  if (!container) {
+    console.error("Validation container not found for input:", input);
+    return;
+  }
+  const errorMessage = container.querySelector(".error-message");
 
   if (errorMessage) {
     if (
@@ -285,7 +294,11 @@ function validateInput(event) {
         input.value.trim())
     ) {
       console.log("Removing error message for:", input);
-      errorMessage.remove();
+      errorMessage.style.opacity = '0';
+      errorMessage.style.transition = 'opacity 0.3s ease-out';
+      setTimeout(() => {
+        errorMessage.remove();
+      }, 300);
     }
   }
 }
@@ -296,8 +309,8 @@ function setupFormValidation() {
     "#orderForm input, #orderForm select"
   );
   formInputs.forEach((input) => {
-    input.addEventListener("change", validateInput);
-    input.addEventListener("input", validateInput);
+    input.addEventListener("change", validateInput, { passive: true });
+    input.addEventListener("input", validateInput, { passive: true });
   });
 
   // Add specific handler for file input
@@ -305,20 +318,20 @@ function setupFormValidation() {
   fileInput.addEventListener("change", function(event) {
     console.log("File input changed:", event.target.files);
     validateInput(event);
-  });
+  }, { passive: true });
 }
 
 function updateCartSummary() {
   if (window.Snipcart) {
     Snipcart.store.subscribe(() => {
       const state = Snipcart.store.getState();
-      const cartSummary = document.querySelector(".snipcart-summary");
+      const cartSummary = document.getElementById("cart-summary");
       if (cartSummary) {
         cartSummary.innerHTML = `
           <a href="#" class="snipcart-checkout">
-            <i class="fas fa-shopping-cart"></i>
-            <span class="snipcart-items-count">${state.cart.items.count}</span> items -
-            <span class="snipcart-total-price">${state.cart.total}</span>
+            <i id="cart-icon" class="fas fa-shopping-cart"></i>
+            <span id="cart-items" class="snipcart-items-count">${state.cart.items.count}</span> items -
+            <span id="cart-total" class="snipcart-total-price">${state.cart.total}</span>
           </a>
         `;
       }
@@ -339,7 +352,7 @@ function extractPriceDataFromTable() {
       const price = parseFloat(cells[3].textContent.replace("$", "").trim());
       const [width, height] = size.split("x").map((s) => parseFloat(s));
       const id = row
-        .querySelector(".snipcart-add-item")
+        .querySelector("[data-item-id]")
         .getAttribute("data-item-id");
 
       allPrices.push({ shape, width, height, quantity, price, id });

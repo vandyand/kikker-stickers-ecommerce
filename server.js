@@ -17,62 +17,63 @@ cloudinary.config({
 
 function generatePriceTable(prices) {
   if (!Array.isArray(prices) || prices.length === 0) {
-    return "<p>No price data available</p>";
+    return "<p class='text-gray-600'>No price data available</p>";
   }
 
   let tableHtml = `
-    <table class="price-table">
-      <thead>
-        <tr>
-          <th>Shape</th>
-          <th>Size</th>
-          <th>Quantity</th>
-          <th>Price</th>
-          <th style="display: none">Snipcart Data</th>
-        </tr>
-      </thead>
-      <tbody>
+    <div class="overflow-x-auto">
+      <table class="min-w-full bg-white">
+        <thead class="bg-gray-100">
+          <tr>
+            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Shape</th>
+            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Size</th>
+            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Quantity</th>
+            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Price</th>
+            <th class="sr-only">Snipcart Data</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-gray-200">
   `;
 
   prices.forEach((item, index) => {
     try {
-      const rowClass = index % 2 === 0 ? "row-even" : "row-odd";
+      const rowClass = index % 2 === 0 ? 'bg-white' : 'bg-gray-50';
       tableHtml += `
         <tr class="${rowClass}">
-          <td>${item.shape}</td>
-          <td>${item.width}" x ${item.height}"</td>
-          <td>${item.quantity}</td>
-          <td>$${item.price.toFixed(2)}</td>
-          <td style="display: none">
-            <div class="snipcart-item">
-              <button class="snipcart-add-item"
-                data-item-id="${item.id}"
-                data-item-price="${item.price.toFixed(2)}"
-                data-item-url="https://kikker-stickers.github.io/kikker-stickers-ecommerce"
-                data-item-description="${item.width} x ${item.height} ${item.shape} sticker, quantity: ${item.quantity}"
-                data-item-image="placeholder.png"
-                data-item-name="Custom ${item.shape} Sticker"
-                data-item-custom1-name="Shape"
-                data-item-custom1-options="${item.shape}"
-                data-item-custom2-name="Size"
-                data-item-custom2-value="${item.width} x ${item.height}"
-                data-item-custom3-name="Quantity"
-                data-item-custom3-value="${item.quantity}"
-              >
-                Add to cart
-              </button>
-            </div>
+          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">${item.shape}</td>
+          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">${item.width}" x ${item.height}"</td>
+          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">${item.quantity}</td>
+          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">$${item.price.toFixed(2)}</td>
+          <td class="sr-only">
+            <button
+              class="snipcart-add-item"
+              data-item-id="${item.id}"
+              data-item-price="${item.price.toFixed(2)}"
+              data-item-url="https://kikker-stickers.github.io/kikker-stickers-ecommerce"
+              data-item-description="${item.width} x ${item.height} ${item.shape} sticker, quantity: ${item.quantity}"
+              data-item-image="placeholder.png"
+              data-item-name="Custom ${item.shape} Sticker"
+              data-item-custom1-name="Shape"
+              data-item-custom1-options="${item.shape}"
+              data-item-custom2-name="Size"
+              data-item-custom2-value="${item.width} x ${item.height}"
+              data-item-custom3-name="Quantity"
+              data-item-custom3-value="${item.quantity}"
+            >
+              Add to cart
+            </button>
           </td>
         </tr>
       `;
     } catch (error) {
-      // Silently handle errors
+      console.error("Error generating price table row:", error);
     }
   });
 
   tableHtml += `
-      </tbody>
-    </table>
+        </tbody>
+      </table>
+    </div>
   `;
 
   return tableHtml;
@@ -85,11 +86,13 @@ app.get("/", (req, res) => {
 
   fs.readFile(indexPath, "utf8", (err, html) => {
     if (err) {
+      console.error("Error reading index file:", err);
       return res.status(500).send("Error reading index file");
     }
 
     fs.readFile(pricesPath, "utf8", (err, pricesJson) => {
       if (err) {
+        console.error("Error reading prices file:", err);
         return res.status(500).send("Error reading prices file");
       }
 
@@ -97,24 +100,27 @@ app.get("/", (req, res) => {
       try {
         prices = JSON.parse(pricesJson);
       } catch (parseError) {
+        console.error("Error parsing prices JSON:", parseError);
         return res.status(500).send("Error parsing prices JSON");
       }
 
       const priceTable = generatePriceTable(prices);
 
-      const oldTableRegex = /<div id="priceTable">[\s\S]*?<\/div>/;
-      const oldTableMatch = html.match(oldTableRegex);
+      const priceTableRegex = /<div id="priceTable"[^>]*>[\s\S]*?<\/div>/;
+      const priceTableMatch = html.match(priceTableRegex);
 
-      if (!oldTableMatch) {
+      if (!priceTableMatch) {
+        console.error("Price table placeholder not found in HTML");
         return res.status(500).send("Error updating price table");
       }
 
       const updatedHtml = html.replace(
-        oldTableRegex,
-        `<div id="priceTable">${priceTable}</div>`
+        priceTableRegex,
+        `<div id="priceTable" class="mt-4">${priceTable}</div>`
       );
 
-      if (updatedHtml.length === html.length) {
+      if (updatedHtml === html) {
+        console.error("Price table was not updated in HTML");
         return res.status(500).send("Error updating price table");
       }
 
