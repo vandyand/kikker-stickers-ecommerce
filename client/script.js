@@ -161,14 +161,11 @@ function hideSpinner() {
 function handleSubmit(event) {
   event.preventDefault();
 
-  console.log("Form submission started");
-
   document.querySelectorAll(".error-message").forEach((el) => el.remove());
 
   let isValid = true;
 
   const imageInput = document.getElementById("image");
-  console.log("Image input files:", imageInput.files);
   if (!imageInput.files || imageInput.files.length === 0) {
     displayError(imageInput, "Please upload an image");
     isValid = false;
@@ -191,8 +188,6 @@ function handleSubmit(event) {
     displayError(quantitySelect, "Please select a quantity");
     isValid = false;
   }
-
-  console.log("Form validation result:", isValid);
 
   if (isValid) {
     const shape = shapeSelect.value;
@@ -254,7 +249,6 @@ function handleSubmit(event) {
 }
 
 function displayError(element, message) {
-  console.log("Displaying error for element:", element, "Message:", message);
   const container =
     element.closest('div[id$="Group"]') || element.parentElement;
   if (!container) {
@@ -283,7 +277,6 @@ function displayError(element, message) {
 }
 
 function validateInput(event) {
-  console.log("Validating input:", event.target);
   const input = event.target;
   const container = input.closest('div[id$="Group"]') || input.parentElement;
   if (!container) {
@@ -300,7 +293,6 @@ function validateInput(event) {
         input.type !== "select-one" &&
         input.value.trim())
     ) {
-      console.log("Removing error message for:", input);
       errorMessage.style.opacity = "0";
       errorMessage.style.transition = "opacity 0.3s ease-out";
       setTimeout(() => {
@@ -311,7 +303,6 @@ function validateInput(event) {
 }
 
 function setupFormValidation() {
-  console.log("Setting up form validation");
   const formInputs = document.querySelectorAll(
     "#orderForm input, #orderForm select"
   );
@@ -325,7 +316,6 @@ function setupFormValidation() {
   fileInput.addEventListener(
     "change",
     function (event) {
-      console.log("File input changed:", event.target.files);
       validateInput(event);
     },
     { passive: true }

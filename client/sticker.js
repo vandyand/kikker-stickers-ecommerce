@@ -17,9 +17,9 @@ function initStickerDisplay() {
   const zoomInBtn = document.getElementById("zoomIn");
   const zoomOutBtn = document.getElementById("zoomOut");
 
-  shapeSelect.addEventListener("change", updateStickerDisplay);
-  sizeSelect.addEventListener("change", updateStickerDisplay);
-  fileInput.addEventListener("change", updateStickerDisplay);
+  shapeSelect.addEventListener("change", updateStikerDisplay);
+  sizeSelect.addEventListener("change", updateStikerDisplay);
+  fileInput.addEventListener("change", updateStikerDisplay);
 
   moveLeftBtn.addEventListener("click", () => moveImage(10, 0));
   moveRightBtn.addEventListener("click", () => moveImage(-10, 0));
@@ -37,7 +37,7 @@ function initStickerDisplay() {
 
   window.addEventListener("resize", handleResize);
 
-  updateStickerDisplay();
+  updateStikerDisplay();
 }
 
 function setupContinuousMovement(button, dx, dy) {
@@ -61,7 +61,7 @@ function stopContinuousAction() {
   clearInterval(zoomInterval);
 }
 
-function updateStickerDisplay() {
+function updateStikerDisplay() {
   const shapeSelect = document.getElementById("shape");
   const sizeSelect = document.getElementById("size");
   const uploadedImage = document.getElementById("uploadedImage");
@@ -183,21 +183,33 @@ document.addEventListener("DOMContentLoaded", function () {
   let startX;
   let scrollLeft;
 
-  priceTable.addEventListener("touchstart", function (e) {
-    isScrolling = true;
-    startX = e.touches[0].pageX - priceTable.offsetLeft;
-    scrollLeft = priceTable.scrollLeft;
-  }, { passive: true });
+  priceTable.addEventListener(
+    "touchstart",
+    function (e) {
+      isScrolling = true;
+      startX = e.touches[0].pageX - priceTable.offsetLeft;
+      scrollLeft = priceTable.scrollLeft;
+    },
+    { passive: true }
+  );
 
-  priceTable.addEventListener("touchmove", function (e) {
-    if (!isScrolling) return;
-    e.preventDefault();
-    const x = e.touches[0].pageX - priceTable.offsetLeft;
-    const walk = (x - startX) * 2;
-    priceTable.scrollLeft = scrollLeft - walk;
-  }, { passive: false });
+  priceTable.addEventListener(
+    "touchmove",
+    function (e) {
+      if (!isScrolling) return;
+      e.preventDefault();
+      const x = e.touches[0].pageX - priceTable.offsetLeft;
+      const walk = (x - startX) * 2;
+      priceTable.scrollLeft = scrollLeft - walk;
+    },
+    { passive: false }
+  );
 
-  priceTable.addEventListener("touchend", function () {
-    isScrolling = false;
-  }, { passive: true });
+  priceTable.addEventListener(
+    "touchend",
+    function () {
+      isScrolling = false;
+    },
+    { passive: true }
+  );
 });
