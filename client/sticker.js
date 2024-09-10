@@ -21,12 +21,12 @@ function initStickerDisplay() {
   sizeSelect.addEventListener("change", updateStikerDisplay);
   fileInput.addEventListener("change", updateStikerDisplay);
 
-  moveLeftBtn.addEventListener("click", () => moveImage(10, 0));
-  moveRightBtn.addEventListener("click", () => moveImage(-10, 0));
-  moveUpBtn.addEventListener("click", () => moveImage(0, 10));
-  moveDownBtn.addEventListener("click", () => moveImage(0, -10));
-  zoomInBtn.addEventListener("click", () => zoomImage(0.1));
-  zoomOutBtn.addEventListener("click", () => zoomImage(-0.1));
+  moveLeftBtn.addEventListener("click", () => moveImage(moveStep, 0));
+  moveRightBtn.addEventListener("click", () => moveImage(-moveStep, 0));
+  moveUpBtn.addEventListener("click", () => moveImage(0, moveStep));
+  moveDownBtn.addEventListener("click", () => moveImage(0, -moveStep));
+  zoomInBtn.addEventListener("click", () => zoomImage(zoomStep));
+  zoomOutBtn.addEventListener("click", () => zoomImage(-zoomStep));
 
   setupContinuousMovement(moveLeftBtn, moveStep, 0);
   setupContinuousMovement(moveRightBtn, -moveStep, 0);
@@ -83,8 +83,10 @@ function updateStikerDisplay() {
 
 function applyImageTransform() {
   const uploadedImage = document.getElementById("uploadedImage");
+  const viewPort = document.getElementById("viewPort");
 
-  uploadedImage.style.transform = `translate(-50%, -50%) scale(${imageScale}) translate(${imagePosition.x}px, ${imagePosition.y}px)`;
+  // Ensure the image is centered correctly
+  uploadedImage.style.transform = `translate(-50%, -50%) translate(${imagePosition.x}px, ${imagePosition.y}px) scale(${imageScale})`;
 }
 
 function updateClipPath(shape, size) {

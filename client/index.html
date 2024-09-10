@@ -33,6 +33,26 @@
       .shake {
         animation: shake 0.5s ease-in-out;
       }
+
+      #viewPort {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        transform: translate(-50%, -50%);
+      }
+
+      #uploadedImage {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 150%;
+        max-height: 150%;
+        object-fit: cover;
+      }
     </style>
   </head>
   <body class="bg-gray-100 text-gray-800 font-sans">
@@ -209,12 +229,14 @@
               id="stickerDisplay"
               class="w-full max-w-sm mx-auto aspect-square relative overflow-hidden mb-4"
             >
-              <img
-                id="uploadedImage"
-                src="/placeholder.png"
-                alt="Uploaded image"
-                class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 max-w-[150%] max-h-[150%] object-cover"
-              />
+              <div id="viewPort" class="absolute top-0 left-0 w-full h-full overflow-hidden">
+                <img
+                  id="uploadedImage"
+                  src="/placeholder.png"
+                  alt="Uploaded image"
+                  class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 max-w-[150%] max-h-[150%] object-cover"
+                />
+              </div>
             </div>
           </div>
           <div class="border rounded-lg p-4">
