@@ -70,7 +70,7 @@ function generatePriceTable(prices) {
               data-item-custom3-name="Quantity"
               data-item-custom3-value="${item.quantity}"
             >
-              Add to cart
+              Placholder
             </button>
           </td>
         </tr>
