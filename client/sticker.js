@@ -38,6 +38,7 @@ function initStickerDisplay() {
   window.addEventListener("resize", handleResize);
 
   updateStikerDisplay();
+  console.log("Initial sticker display values:", { imagePosition, imageScale });
 }
 
 function setupContinuousMovement(button, dx, dy) {
@@ -67,14 +68,22 @@ function updateStikerDisplay() {
   const uploadedImage = document.getElementById("uploadedImage");
   const fileInput = document.getElementById("image");
 
+  console.log("Updating sticker display:", {
+    shape: shapeSelect.value,
+    size: sizeSelect.value,
+    hasFile: fileInput.files && fileInput.files.length > 0
+  });
+
   if (fileInput.files && fileInput.files[0]) {
     const reader = new FileReader();
     reader.onload = function (e) {
       uploadedImage.src = e.target.result;
+      console.log("Image loaded");
     };
     reader.readAsDataURL(fileInput.files[0]);
   } else {
     uploadedImage.src = "placeholder.png";
+    console.log("Using placeholder image");
   }
 
   updateClipPath(shapeSelect.value, sizeSelect.value);
@@ -83,10 +92,31 @@ function updateStikerDisplay() {
 
 function applyImageTransform() {
   const uploadedImage = document.getElementById("uploadedImage");
-  const viewPort = document.getElementById("viewPort");
+  const stickerDisplay = document.getElementById("stickerDisplay");
 
-  // Ensure the image is centered correctly
-  uploadedImage.style.transform = `translate(-50%, -50%) translate(${imagePosition.x}px, ${imagePosition.y}px) scale(${imageScale})`;
+  // Calculate the scale relative to the original size
+  const relativeScale = imageScale;
+
+  // Calculate the maximum allowed pan based on the scaled image size and sticker display size
+  const scaledImageWidth = uploadedImage.naturalWidth * relativeScale;
+  const scaledImageHeight = uploadedImage.naturalHeight * relativeScale;
+  const maxPanX = (scaledImageWidth - stickerDisplay.offsetWidth) / 2;
+  const maxPanY = (scaledImageHeight - stickerDisplay.offsetHeight) / 2;
+
+  // Limit the pan values
+  const relativeX = Math.max(-maxPanX, Math.min(maxPanX, imagePosition.x));
+  const relativeY = Math.max(-maxPanY, Math.min(maxPanY, imagePosition.y));
+
+  uploadedImage.style.transform = `translate(-50%, -50%) translate(${relativeX}px, ${relativeY}px) scale(${relativeScale})`;
+
+  console.log("Image transform applied:", { 
+    x: relativeX, 
+    y: relativeY, 
+    scale: relativeScale,
+    imagePosition,
+    maxPanX,
+    maxPanY
+  });
 }
 
 function updateClipPath(shape, size) {
@@ -153,21 +183,32 @@ function getSizeDimensions(size) {
 }
 
 function moveImage(dx, dy) {
-  imagePosition.x += dx;
-  imagePosition.y += dy;
+  const uploadedImage = document.getElementById("uploadedImage");
+  const stickerDisplay = document.getElementById("stickerDisplay");
+
+  const scaledImageWidth = uploadedImage.naturalWidth * imageScale;
+  const scaledImageHeight = uploadedImage.naturalHeight * imageScale;
+  const maxPanX = (scaledImageWidth - stickerDisplay.offsetWidth) / 2;
+  const maxPanY = (scaledImageHeight - stickerDisplay.offsetHeight) / 2;
+
+  imagePosition.x = Math.max(-maxPanX, Math.min(maxPanX, imagePosition.x + dx));
+  imagePosition.y = Math.max(-maxPanY, Math.min(maxPanY, imagePosition.y + dy));
 
   applyImageTransform();
+  console.log("Image moved:", { x: imagePosition.x, y: imagePosition.y, scale: imageScale });
 }
 
 function zoomImage(dScale) {
   const oldScale = imageScale;
   imageScale = Math.max(0.1, Math.min(3, imageScale + dScale));
 
+  // Adjust the position to keep the zoom centered
   const scaleRatio = imageScale / oldScale;
   imagePosition.x *= scaleRatio;
   imagePosition.y *= scaleRatio;
 
   applyImageTransform();
+  console.log("Image zoomed:", { scale: imageScale, position: imagePosition });
 }
 
 function handleResize() {

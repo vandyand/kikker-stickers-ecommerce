@@ -53,6 +53,11 @@
         max-height: 150%;
         object-fit: cover;
       }
+
+      #stickerDisplay {
+        position: relative;
+        overflow: hidden;
+      }
     </style>
   </head>
   <body class="bg-gray-100 text-gray-800 font-sans">
@@ -229,14 +234,12 @@
               id="stickerDisplay"
               class="w-full max-w-sm mx-auto aspect-square relative overflow-hidden mb-4"
             >
-              <div id="viewPort" class="absolute top-0 left-0 w-full h-full overflow-hidden">
-                <img
-                  id="uploadedImage"
-                  src="/placeholder.png"
-                  alt="Uploaded image"
-                  class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 max-w-[150%] max-h-[150%] object-cover"
-                />
-              </div>
+              <img
+                id="uploadedImage"
+                src="/placeholder.png"
+                alt="Uploaded image"
+                class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full object-cover"
+              />
             </div>
           </div>
           <div class="border rounded-lg p-4">

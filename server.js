@@ -140,14 +140,18 @@ app.get("/", (req, res) => {
 });
 
 app.post("/upload-sticker", async (req, res) => {
+  console.log("Received sticker upload request");
   try {
+    console.log("Uploading sticker to Cloudinary");
     const result = await cloudinary.uploader.upload(req.body.imageBase64, {
       upload_preset: "ml_default",
       folder: "kikker_stickers",
     });
 
+    console.log("Sticker uploaded successfully:", result.secure_url);
     res.json({ imageUrl: result.secure_url });
   } catch (error) {
+    console.error("Error uploading to Cloudinary:", error);
     res.status(500).send("Error uploading to Cloudinary");
   }
 });
