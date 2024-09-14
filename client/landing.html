@@ -8,17 +8,11 @@
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body class="font-poppins bg-white">
+    <div id="header-placeholder">
+      <!-- Placeholder for header -->
+    </div>
+
     <div class="container mx-auto p-5">
-      <header class="text-center mb-10 bg-green">
-        <h1 class="text-4xl font-bold text-white">Kikker Stickers</h1>
-        <p class="cl-brown">Your one-stop shop for unique decal stickers!</p>
-        <a
-          href="/"
-          class="bg-secondary text-white font-bold py-2 px-4 rounded-lg hover:bg-secondary-dark transition duration-300 mt-4 inline-block"
-        >
-          Create Your Unique Decal
-        </a>
-      </header>
       <section class="flex flex-wrap justify-center">
         <div class="w-full sm:w-1/2 lg:w-1/3 p-4">
           <img
@@ -169,25 +163,33 @@
           </div>
         </div>
       </section>
-      <section class="mt-10">
-        <div
-          class="bg-white rounded-lg shadow-md p-6 flex justify-center items-center"
-        >
-          <img
-            src="/kikkersticker.png"
-            alt="Kikker Sticker Logo"
-            class="h-24 w-auto"
-          />
-        </div>
-      </section>
       <footer class="text-center mt-10 bg-green">
         <a
-          href="/"
+          href="/create-decal"
           class="bg-secondary text-white font-bold py-2 px-4 rounded-lg hover:bg-secondary-dark transition duration-300"
         >
           Create Your Unique Decal
         </a>
       </footer>
     </div>
+
+    <script>
+      // Load header and footer
+      function loadHeaderFooter() {
+        fetch("header-nav.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("header-placeholder").innerHTML = data;
+          });
+
+        fetch("footer.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("footer-placeholder").innerHTML = data;
+          });
+      }
+
+      document.addEventListener("DOMContentLoaded", loadHeaderFooter);
+    </script>
   </body>
 </html>

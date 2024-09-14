@@ -9,6 +9,12 @@ app.use(cors());
 app.use(express.json({ limit: "50mb" }));
 app.use(express.urlencoded({ limit: "50mb", extended: true }));
 
+// Serve static files from the client directory
+app.use(express.static(path.join(__dirname, "client")));
+
+// Handle favicon requests
+app.get('/favicon.ico', (req, res) => res.status(204)); // Respond with no content
+
 cloudinary.config({
   cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
   api_key: process.env.CLOUDINARY_API_KEY,
@@ -90,8 +96,14 @@ function generatePriceTable(prices) {
 }
 
 app.get("/", (req, res) => {
+  // Serve the landing page at the root endpoint
+  res.sendFile(path.join(__dirname, "client", "landing.html"));
+});
+
+app.get("/create-decal", (req, res) => {
+  // Serve the index page at the '/create-decal' endpoint
   res.setHeader("Cache-Control", "no-store, max-age=0");
-  const indexPath = path.join(__dirname, "client", "index.html");
+  const indexPath = path.join(__dirname, "client", "create-decal.html");
   const pricesPath = path.join(__dirname, "client", "prices.json");
 
   fs.readFile(indexPath, "utf8", (err, html) => {
@@ -139,10 +151,6 @@ app.get("/", (req, res) => {
   });
 });
 
-app.get("/landing", (req, res) => {
-  res.sendFile(path.join(__dirname, "client", "landing.html"));
-});
-
 app.post("/upload-sticker", async (req, res) => {
   console.log("Received sticker upload request");
   try {
@@ -159,8 +167,6 @@ app.post("/upload-sticker", async (req, res) => {
     res.status(500).send("Error uploading to Cloudinary");
   }
 });
-
-app.use(express.static(path.join(__dirname, "client")));
 
 const port = process.env.PORT || 8081;
 app.listen(port, () => {

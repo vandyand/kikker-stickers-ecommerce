@@ -17,17 +17,8 @@
     />
   </head>
   <body class="bg-gray-100 text-gray-800 font-sans">
-    <div
-      id="processing-spinner"
-      class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 hidden"
-    >
-      <div
-        class="w-12 h-12 border-4 border-primary border-t-transparent rounded-full animate-spin"
-      ></div>
-    </div>
-    <header class="bg-green text-white text-center py-4">
-      <h1 class="text-3xl font-bold">Kikker Sticker</h1>
-    </header>
+    <div id="header-placeholder"></div>
+    <!-- Placeholder for header -->
 
     <main class="container mx-auto px-4 py-8">
       <div class="flex flex-col lg:flex-row gap-8">
@@ -253,11 +244,10 @@
       </section>
     </main>
 
-    <footer class="bg-green text-white text-center py-4 mt-8">
-      <p>&copy; 2024 Kikker Stickers. All rights reserved.</p>
-    </footer>
+    <div id="footer-placeholder"></div>
+    <!-- Placeholder for footer -->
+
     <script src="/script.js"></script>
-    <script src="/sticker.js"></script>
     <script>
       const dropzone = document.getElementById("dropzone");
       const fileInput = document.getElementById("image");
@@ -331,5 +321,23 @@
       data-api-key="YTdlNzRkM2MtMmFjOS00NzUzLWExYjItNTVkMTQ2N2U5N2M4NjM4NTk3Njc5MTc5NDY3OTQ3"
     ></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html-to-image/1.11.11/html-to-image.min.js"></script>
+    <script>
+      // Load header and footer
+      function loadHeaderFooter() {
+        fetch("header-nav.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("header-placeholder").innerHTML = data;
+          });
+
+        fetch("footer.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("footer-placeholder").innerHTML = data;
+          });
+      }
+
+      document.addEventListener("DOMContentLoaded", loadHeaderFooter);
+    </script>
   </body>
 </html>
