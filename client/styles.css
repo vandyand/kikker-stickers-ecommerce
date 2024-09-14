@@ -1,0 +1,81 @@
+:root {
+  --primary-green: #62b63e;
+  --secondary-beige: #faf8cc;
+  --secondary-orange: #e38c33;
+  --secondary-brown: #805639;
+}
+
+.bg-green {
+  background-color: var(--primary-green);
+}
+
+.cl-green {
+  color: var(--primary-green);
+}
+
+.bg-beige {
+  background-color: var(--secondary-beige);
+}
+
+.cl-beige {
+  color: var(--secondary-beige);
+}
+
+.bg-orange {
+  background-color: var(--secondary-orange);
+}
+
+.cl-orange {
+  color: var(--secondary-orange);
+}
+
+.bg-brown {
+  background-color: var(--secondary-brown);
+}
+
+.cl-brown {
+  color: var(--secondary-brown);
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  20%,
+  60% {
+    transform: translateX(-5px);
+  }
+  40%,
+  80% {
+    transform: translateX(5px);
+  }
+}
+.shake {
+  animation: shake 0.5s ease-in-out;
+}
+
+#viewPort {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transform: translate(-50%, -50%);
+}
+
+#uploadedImage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 150%;
+  max-height: 150%;
+  object-fit: cover;
+}
+
+#stickerDisplay {
+  position: relative;
+  overflow: hidden;
+}

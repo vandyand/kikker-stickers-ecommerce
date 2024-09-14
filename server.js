@@ -139,6 +139,10 @@ app.get("/", (req, res) => {
   });
 });
 
+app.get("/landing", (req, res) => {
+  res.sendFile(path.join(__dirname, "client", "landing.html"));
+});
+
 app.post("/upload-sticker", async (req, res) => {
   console.log("Received sticker upload request");
   try {

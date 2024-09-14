@@ -10,55 +10,11 @@
       href="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Add this line to import Font Awesome -->
+    <link rel="stylesheet" href="/styles.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
-    <style>
-      @keyframes shake {
-        0%,
-        100% {
-          transform: translateX(0);
-        }
-        20%,
-        60% {
-          transform: translateX(-5px);
-        }
-        40%,
-        80% {
-          transform: translateX(5px);
-        }
-      }
-      .shake {
-        animation: shake 0.5s ease-in-out;
-      }
-
-      #viewPort {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        transform: translate(-50%, -50%);
-      }
-
-      #uploadedImage {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        max-width: 150%;
-        max-height: 150%;
-        object-fit: cover;
-      }
-
-      #stickerDisplay {
-        position: relative;
-        overflow: hidden;
-      }
-    </style>
   </head>
   <body class="bg-gray-100 text-gray-800 font-sans">
     <div
@@ -66,11 +22,11 @@
       class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 hidden"
     >
       <div
-        class="w-12 h-12 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"
+        class="w-12 h-12 border-4 border-primary border-t-transparent rounded-full animate-spin"
       ></div>
     </div>
-    <header class="bg-blue-500 text-white text-center py-4">
-      <h1 class="text-3xl font-bold">Welcome to Kikker Sticker</h1>
+    <header class="bg-green text-white text-center py-4">
+      <h1 class="text-3xl font-bold">Kikker Sticker</h1>
     </header>
 
     <main class="container mx-auto px-4 py-8">
@@ -92,7 +48,7 @@
                 />
                 <div
                   id="dropzone"
-                  class="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center cursor-pointer hover:border-blue-500 transition duration-300"
+                  class="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center cursor-pointer hover:border-primary transition duration-300"
                 >
                   <div class="mb-4">
                     <i
@@ -105,7 +61,7 @@
                   <p class="text-gray-500 text-sm">or</p>
                   <button
                     type="button"
-                    class="mt-2 bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded transition duration-300"
+                    class="mt-2 bg-green hover:bg-green-dark text-white font-semibold py-2 px-4 rounded transition duration-300"
                   >
                     Choose File
                   </button>
@@ -206,7 +162,7 @@
               <button
                 id="addToCart"
                 type="submit"
-                class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600"
+                class="bg-green text-white py-2 px-4 rounded hover:bg-green-dark"
               >
                 Add to cart
               </button>
@@ -297,7 +253,7 @@
       </section>
     </main>
 
-    <footer class="bg-gray-800 text-white text-center py-4 mt-8">
+    <footer class="bg-green text-white text-center py-4 mt-8">
       <p>&copy; 2024 Kikker Stickers. All rights reserved.</p>
     </footer>
     <script src="/script.js"></script>
@@ -312,16 +268,16 @@
 
       dropzone.addEventListener("dragover", (e) => {
         e.preventDefault();
-        dropzone.classList.add("border-blue-500");
+        dropzone.classList.add("border-primary");
       });
 
       dropzone.addEventListener("dragleave", () => {
-        dropzone.classList.remove("border-blue-500");
+        dropzone.classList.remove("border-primary");
       });
 
       dropzone.addEventListener("drop", (e) => {
         e.preventDefault();
-        dropzone.classList.remove("border-blue-500");
+        dropzone.classList.remove("border-primary");
         fileInput.files = e.dataTransfer.files;
         updateFileInfo();
       });
